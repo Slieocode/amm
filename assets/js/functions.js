@@ -82,8 +82,9 @@ $(document).ready(function(){
 	}
 	if($('.typed-text-about').length){
 		/* About Header Typing Effect */	
+		let title = $('.title-text').text();
 		let typedAbout = new Typed('.typed-text-about', {
-	  		strings: ["I'm Nicholas G. Muscat."],
+	  		strings: [title],
 	  		typeSpeed: 70
 		});	
 	}

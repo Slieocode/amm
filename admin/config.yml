@@ -35,4 +35,6 @@ collections:
             widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
+              - {label: "Blurb", name: "blurp", widget: "string"}
+              - {label: "my Story", name: "myStory", widget: "markdown"}
 
