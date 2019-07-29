@@ -50,18 +50,18 @@ collections:
               - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
               - {label: "Blurb", name: "header_paragraph", widget: "string"}
           - label: "About Section"
-            name: "home"
+            name: "about"
             widget: "object"
             fields:
               - {label: "Small Title", name: "about_title_one", widget: "string"}
-              # - {label: "Heading Title", name: "about_heading", widget: "string"}
-              # - {label: "about paragraph", name: "about_paragraph", widget: "string"}
-              # - {label: "First Box Title", name: "about_box_one_title", widget: "string"}
-              # - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
-              # - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
-              # - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
-              # - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
-              # - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
-              # - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
-              # - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+              - {label: "Heading Title", name: "about_heading", widget: "string"}
+              - {label: "about paragraph", name: "about_paragraph", widget: "string"}
+              - {label: "First Box Title", name: "about_box_one_title", widget: "string"}
+              - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
+              - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
+              - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
+              - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
+              - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
+              - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
+              - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
 
