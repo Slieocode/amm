@@ -118,3 +118,18 @@ collections:
               - {label: "Client four Paragraph", name: "c_4_paragraph", widget: "string"}
               - {label: "Client four Date", name: "c_4_date", widget: "string"}
               - {label: "Client four Avatar", name: "c_4_img", widget: "image" }
+              
+  #Blog Post Collections 
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "post" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "category", name: "categories", widget: "string"}
+      - {label: "author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featImg", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
