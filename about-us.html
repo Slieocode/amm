@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<header class="header-about-us">
+	<div class="about-nav">
+		{% include navbar.html %}		
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="blurp animated fadeIn">
+				<h1><span class="underline">{{site.data.site.headerAbout.catch_phrase}}</span></h1>
+				<p>{{site.data.site.headerAbout.subtext}}</p>
+			</div>
+			<div class="illustration">
+				<img src="assets/img/about-us/00.png" alt="Finance">
+			</div>			
+		</div>
+	</div>
+	<img style="position:absolute;bottom:-1%;width:100%" src="./assets/img/header/waves3.png" alt="">		
+</header>
+<section class="about-us-info">
+	<div class="container">
+		<div class="our-mission animated fadeInDown">
+			<div class="paragraph">
+				<h1> {{site.data.site.headerAbout.info_box_1_heading}} </h1>
+					<p>{{site.data.site.headerAbout.info_box_1_subtext}}</p>
+			</div>
+			<div class="pic">
+				<img src="./assets/img/about-us/02.png" alt="AMM">
+			</div>
+		</div>
+		<div class="our-mission">
+			<div class="pic">
+				<img src="./assets/img/about-us/03.png" alt="AMM">
+			</div>
+			<div class="paragraph">
+				<h1> {{site.data.site.headerAbout.info_box_2_heading}} </h1>
+					<p>{{site.data.site.headerAbout.info_box_2_subtext}}</p>
+			</div>
+		</div>
+		<div class="our-mission">
+			<div class="paragraph">
+				<h1> {{site.data.site.headerAbout.info_box_3_heading}} </h1>
+					<p>{{site.data.site.headerAbout.info_box_3_subtext}}</p>
+			</div>
+			<div class="pic">
+				<img src="./assets/img/about-us/05.png" alt="AMM">
+			</div>
+		</div>
+	</div>
+</section>
+{% include footer.html %}

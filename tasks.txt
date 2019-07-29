@@ -1,0 +1,14 @@
+[X]About AMM:x
+[X]About Nicholas:x
+[X]Home:x
+[X]Articles:
+[X]Blog: 
+   [X]sub categories
+[] Make the Site Editable
+-------------------------------------
+[]FAQS:
+[]Services and reccomendations:
+[]eBook:
+[]Contact
+[]Search Engine Implementation
+[]Make Changes
