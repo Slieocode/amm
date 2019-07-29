@@ -105,16 +105,16 @@ collections:
               - {label: "Client One Heading", name: "c_1_heading", widget: "string"}
               - {label: "Client One Paragraph", name: "c_1_paragraph", widget: "string"}
               - {label: "Client One Date", name: "c_1_date", widget: "string"}
-              - {label: "Client One Avatar", name: "c_1_img", widget: "image", default: "uploads/" }
+              - {label: "Client One Avatar", name: "c_1_img", widget: "image" }
               - {label: "Client two Heading", name: "c_2_heading", widget: "string"}
               - {label: "Client two Paragraph", name: "c_2_paragraph", widget: "string"}
               - {label: "Client two Date", name: "c_2_date", widget: "string"}
-              - {label: "Client two Avatar", name: "c_2_img", widget: "image", default: "uploads/" }
+              - {label: "Client two Avatar", name: "c_2_img", widget: "image" }
               - {label: "Client three Heading", name: "c_3_heading", widget: "string"}
               - {label: "Client three Paragraph", name: "c_3_paragraph", widget: "string"}
               - {label: "Client three Date", name: "c_3_date", widget: "string"}
-              - {label: "Client three Avatar", name: "c_3_img", widget: "image", default: "uploads/" }
+              - {label: "Client three Avatar", name: "c_3_img", widget: "image" }
               - {label: "Client four Heading", name: "c_4_heading", widget: "string"}
               - {label: "Client four Paragraph", name: "c_4_paragraph", widget: "string"}
               - {label: "Client four Date", name: "c_4_date", widget: "string"}
-              - {label: "Client four Avatar", name: "c_4_img", widget: "image", default: "uploads/" }
+              - {label: "Client four Avatar", name: "c_4_img", widget: "image" }
