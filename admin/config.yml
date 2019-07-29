@@ -42,14 +42,6 @@ collections:
         file: "_data/index.yml"
         widget: 'object'
         fields:
-          - label: "Header Section"
-            name: "home"
-            widget: "object"
-            fields:
-              - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
-              - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
-              - {label: "Blurb", name: "header_paragraph", widget: "string"}
-
           - label: "About Section"
             name: "home"
             widget: "object"
@@ -65,4 +57,11 @@ collections:
               - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
               - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
               - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+          - label: "Header Section"
+            name: "home"
+            widget: "object"
+            fields:
+              - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
+              - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
+              - {label: "Blurb", name: "header_paragraph", widget: "string"}
 
