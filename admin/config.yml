@@ -26,13 +26,13 @@ collections:
               - {label: "Box Two subtext", name: "info_box_2_subtext", widget: "string"}
               - {label: "Box Three Heading", name: "info_box_3_heading", widget: "string"}
               - {label: "Box Three subtext", name: "info_box_3_subtext", widget: "string"}
-        - label: "About Me Pagex"
-          name: "site"
-          file: "_data/site.yml"
-          fields:
-            - label: "about Me landing page"
-              name: "headerAboutMe"
-              widget: "object"
-              fields:
-                - {label: "Title", name: "headerAboutMe", widget: "string"}
+          - label: "About Me Pagex"
+            name: "site"
+            file: "_data/site.yml"
+            fields:
+              - label: "about Me landing page"
+                name: "headerAboutMe"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "headerAboutMe", widget: "string"}
 
