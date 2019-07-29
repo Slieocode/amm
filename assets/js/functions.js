@@ -75,8 +75,10 @@ $(document).ready(function(){
 	})
 	/* Header Typing Effect */
 	if($('.typed-text').length){
+		let homeText1 = $('.home-text').text();
+		let homeText2 = $('.home-text-1').text();
 		let typed = new Typed('.typed-text', {
-	  		strings: ["marketing, advertising And Entrepreneurship.", "We've got it all."],
+	  		strings: [homeText1, homeText2],
 	  		typeSpeed: 70
 		});			
 	}

@@ -37,4 +37,15 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Blurb", name: "blurp", widget: "string"}
               - {label: "my Story", name: "myStory", widget: "markdown"}
+      - label: "Home Page"
+        name: "index"
+        file: "_data/index.yml"
+        fields:
+          - label: "Index Landing page"
+            name: "home"
+            widget: "object"
+            fields:
+              - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
+              - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
+              - {label: "Blurb", name: "header_paragraph", widget: "string"}
 
