@@ -26,19 +26,20 @@ collections:
               - {label: "Box Two subtext", name: "info_box_2_subtext", widget: "string"}
               - {label: "Box Three Heading", name: "info_box_3_heading", widget: "string"}
               - {label: "Box Three subtext", name: "info_box_3_subtext", widget: "string"}
-          - label: "About Me Page"
-            name: "site"
-            file: "_data/site.yml"
+
+      - label: "About Me Page"
+        name: "site"
+        file: "_data/site.yml"
+        fields:
+          - label: "about landing page"
+            name: "headerAbout"
+            widget: "object"
             fields:
-              - label: "about landing page"
-                name: "headerAbout"
-                widget: "object"
-                fields:
-                  - {label: "Header Catch Phrase", name: "catch_phrase", widget: "string"}
-                  - {label: "Header subtext", name: "subtext", widget: "string"}
-                  - {label: "Box One Heading", name: "info_box_1_heading", widget: "string"}
-                  - {label: "Box One subtext", name: "info_box_1_subtext", widget: "string"}
-                  - {label: "Box Two Heading", name: "info_box_2_heading", widget: "string"}
-                  - {label: "Box Two subtext", name: "info_box_2_subtext", widget: "string"}
-                  - {label: "Box Three Heading", name: "info_box_3_heading", widget: "string"}
-                  - {label: "Box Three subtext", name: "info_box_3_subtext", widget: "string"}
+              - {label: "Header Catch Phrase", name: "catch_phrase", widget: "string"}
+              - {label: "Header subtext", name: "subtext", widget: "string"}
+              - {label: "Box One Heading", name: "info_box_1_heading", widget: "string"}
+              - {label: "Box One subtext", name: "info_box_1_subtext", widget: "string"}
+              - {label: "Box Two Heading", name: "info_box_2_heading", widget: "string"}
+              - {label: "Box Two subtext", name: "info_box_2_subtext", widget: "string"}
+              - {label: "Box Three Heading", name: "info_box_3_heading", widget: "string"}
+              - {label: "Box Three subtext", name: "info_box_3_subtext", widget: "string"}
