@@ -38,6 +38,7 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Blurb", name: "blurp", widget: "string"}
               - {label: "my Story", name: "myStory", widget: "markdown"}
+        # Home page              
       - label: "Home Page"
         name: "index"
         file: "_data/index.yml"
@@ -94,3 +95,38 @@ collections:
               - {label: "Small heading", name: "smallHeading", widget: "string"}
               - {label: "Phrase", name: "phrase", widget: "string"}
               - {label: "button Text", name: "btn", widget: "string"}
+
+          - label: "Statistics Section"
+            name: "stats"
+            widget: "object"
+            fields:
+              - {label: "Percentage", name: "percent", widget: "string"}
+              - {label: "Under Percentage", name: "stat_p", widget: "string"}
+              - {label: "People Number", name: "people", widget: "string"}
+              - {label: "Under People Number", name: "people_txt", widget: "string"}
+              - {label: "Small heading", name: "smallHeading", widget: "string"}
+              - {label: "Phrase", name: "phrase", widget: "string"}
+              - {label: "button Text", name: "btn", widget: "string"}
+
+          - label: "Testimonials"
+            name: "clients"
+            widget: "object"
+            fields:
+              - {label: "Main Heading", name: "c_heading", widget: "string"}
+              - {label: "Subtext", name: "c_para", widget: "string"}
+              - {label: "Client One Heading", name: "c_1_heading", widget: "string"}
+              - {label: "Client One Paragraph", name: "c_1_paragraph", widget: "string"}
+              - {label: "Client One Date", name: "c_1_date", widget: "string"}
+              - {label: "Client One Avatar", name: "c_1_img", widget: "image"}
+              - {label: "Client two Heading", name: "c_2_heading", widget: "string"}
+              - {label: "Client two Paragraph", name: "c_2_paragraph", widget: "string"}
+              - {label: "Client two Date", name: "c_2_date", widget: "string"}
+              - {label: "Client two Avatar", name: "c_2_img", widget: "image"}
+              - {label: "Client three Heading", name: "c_3_heading", widget: "string"}
+              - {label: "Client three Paragraph", name: "c_3_paragraph", widget: "string"}
+              - {label: "Client three Date", name: "c_3_date", widget: "string"}
+              - {label: "Client three Avatar", name: "c_3_img", widget: "image"}
+              - {label: "Client four Heading", name: "c_4_heading", widget: "string"}
+              - {label: "Client four Paragraph", name: "c_4_paragraph", widget: "string"}
+              - {label: "Client four Date", name: "c_4_date", widget: "string"}
+              - {label: "Client four Avatar", name: "c_4_img", widget: "image"}
