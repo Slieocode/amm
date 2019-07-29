@@ -1,72 +1,49 @@
 home:
   header_catch_phrase_one: 'marketing, advertising And Money Saving.'
   header_catch_phrase_two: We got you covered!
-  header_paragraph: >-
-    XPublic Speaking, Personal Finance, and Information Technology. Strong
-    business development  and IT professional. I also own a blog on Australian
-    Personal Finance and Entrepreneurship.
+  header_paragraph: XPublic Speaking, Personal Finance, and Information Technology. Strong business development  and IT professional. I also own a blog on Australian Personal Finance and Entrepreneurship.
+
 about:
-  about_box_four_p: >-
-    High-speed internet with over 99% reliability, so you can do stream, and
-    download worry-free all the time 24/7.
-  about_box_four_title: Unbiased Informations
-  about_box_one_p: >-
-    High-speed internet with over 99% reliability, so you can do stream, and
-    download worry-free all the time 24/7.
-  about_box_one_title: General Finance
-  about_box_three_p: >-
-    High-speed internet with over 99% reliability, so you can do stream, and
-    download worry-free all the time 24/7.
-  about_box_three_title: Money Saving
-  about_box_two_p: >-
-    High-speed internet with over 99% reliability, so you can do stream, and
-    download worry-free all the time 24/7.
-  about_box_two_title: International Finance
+  about_title_one: 'powerful strategies awaits you.'
   about_heading: '<span class="underline">Nicholas Muscat</span>, Founder & CEO.'
-  about_paragraph: >-
-    Founding small Business which brings a demonstrated history of working in
-    the marketing and advertising industry.
-  about_title_one: powerful strategies awaits you.
+  about_paragraph: 'Founding small Business which brings a demonstrated history of working in the marketing and advertising industry.'
+  about_box_one_title: 'General Finance'
+  about_box_one_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
+  about_box_two_title: 'International Finance'
+  about_box_two_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
+  about_box_three_title: 'Money Saving'
+  about_box_three_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
+  about_box_four_title: 'Unbiased Informations'
+  about_box_four_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
+
 showcase:
-  item_1_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  showcase_heading: '<h1>I Started <span class="underline">Aussiemoneyman</span> with the mission</h1><h1>of helping others to achive comfortable life</h1> '
   item_1_title: Investment
-  item_2_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  item_1_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
   item_2_title: Investment
-  item_3_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  item_2_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
   item_3_title: Investment
-  item_4_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  item_3_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
   item_4_title: Investment
-  item_5_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  item_4_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
   item_5_title: Investment
-  item_6_p: >-
-    Nice one matie boy burke hanky panky A bit of how's your father blower boot
-    it's.
+  item_5_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
   item_6_title: Investment
-  showcase_heading: >-
-    <h1>I Started <span class="underline">Aussiemoneyman</span> with the
-    mission</h1><h1>of helping others to achive comfortable life</h1> 
+  item_6_p: Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.
+
 stats:
-  btn: Learn MoreX
-  people: '254'
-  people_txt: XPeople Helped
   percent: 96%
-  phrase: 'AMM., True Busniess<br> And Financial Freedom'
-  smallHeading: XThe Difference
   stat_p: XBusiness Increased
+  people: "254"
+  people_txt: XPeople Helped 
+  smallHeading: XThe Difference
+  phrase: AMM., True Busniess<br> And Financial Freedom 
+  btn: Learn MoreX
+
 clients:
-  c_1_date: 1X9 Nov
+  c_heading: XWhat Our Clients Say About Us
+  c_para: <p class="first">Dford burke smashing blower me old mucker plastered spiffing </p> <p class="first">good time hotpot chip shop squiffy.</p>   
   c_1_heading: FWorking With Nick is one of the highlights of my career
-<<<<<<< HEAD
   c_1_paragraph: Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. The plans you refer to will soon be back in our hands. A tremor in the Force. The last time I felt it was in the presence of my old master. Escape is not his plan. I must face him. Alone.
   c_1_date: '1X9 Nov'
   c_1_img: uploads/25.jpg 
@@ -91,43 +68,3 @@ clients:
 
 
 
-=======
-  c_1_img: /assets/img/blogs/uploads/28.jpg
-  c_1_paragraph: >-
-    Don't be too proud of this technological terror you've constructed. The
-    ability to destroy a planet is insignificant next to the power of the Force.
-    The plans you refer to will soon be back in our hands. A tremor in the
-    Force. The last time I felt it was in the presence of my old master. Escape
-    is not his plan. I must face him. Alone.
-  c_2_date: 19 Nov
-  c_2_heading: Working With Nick is one of the highlights of my career
-  c_2_img: assets/img/blogs/uploads/25.jpg
-  c_2_paragraph: >-
-    Don't be too proud of this technological terror you've constructed. The
-    ability to destroy a planet is insignificant next to the power of the Force.
-    The plans you refer to will soon be back in our hands. A tremor in the
-    Force. The last time I felt it was in the presence of my old master. Escape
-    is not his plan. I must face him. Alone.
-  c_3_date: 19 Nov
-  c_3_heading: Working With Nick is one of the highlights of my career
-  c_3_img: assets/img/blogs/uploads/25.jpg
-  c_3_paragraph: >-
-    Don't be too proud of this technological terror you've constructed. The
-    ability to destroy a planet is insignificant next to the power of the Force.
-    The plans you refer to will soon be back in our hands. A tremor in the
-    Force. The last time I felt it was in the presence of my old master. Escape
-    is not his plan. I must face him. Alone.
-  c_4_date: 19 Nov
-  c_4_heading: Working With Nick is one of the highlights of my career
-  c_4_img: assets/img/blogs/uploads/25.jpg
-  c_4_paragraph: >-
-    Don't be too proud of this technological terror you've constructed. The
-    ability to destroy a planet is insignificant next to the power of the Force.
-    The plans you refer to will soon be back in our hands. A tremor in the
-    Force. The last time I felt it was in the presence of my old master. Escape
-    is not his plan. I must face him. Alone.
-  c_heading: XWhat Our Clients Say About Us
-  c_para: >-
-    <p class="first">Dford burke smashing blower me old mucker plastered
-    spiffing </p> <p class="first">good time hotpot chip shop squiffy.</p>
->>>>>>> ee74464cf7440195ef81cda07a189ac6406fb12c
