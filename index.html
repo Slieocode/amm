@@ -101,8 +101,9 @@ layout: default
 <section class="showcase">
 	<div class="container">
 		<div class="showcase-text">
-			<h1>I Started <span class="underline">Aussiemoneyman</span> with the mission  </h1>
-			<h1>of helping others to achive comfortable life</h1>
+			<div class="showcase-heading">
+				{{ site.data.index.showcase.showcase_heading }}			
+			</div>
 			<p class="first"> Nothing upsets me more than to see people working hard every day and . </p>
 			<p>not ever achieving financial freedom due only to a lack of education in the field</p>
 		</div>
@@ -110,35 +111,35 @@ layout: default
 			<div class="item-set-1">
 				<div class="item">
 					<i class="fas fa-university"></i>
-					<h3>Investment</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_1_title }}</h3>
+					<p>{{ site.data.index.showcase.item_1_p }}</p>
 				</div>
 				<div class="item">
 					<i class="fas fa-file-invoice-dollar"></i>
-					<h3>Taxation</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_2_title }}</h3>
+					<p>{{ site.data.index.showcase.item_2_p }}</p>
 				</div>
 				<div class="item">
 					<i class="fas fa-hand-holding-usd"></i>
-					<h3>Wealth Creation</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_3_title }}</h3>
+					<p>{{ site.data.index.showcase.item_3_p }}</p>
 				</div>
 			</div>
 			<div class="item-set-2">
 				<div class="item">
 					<i class="fas fa-user-tie"></i>
-					<h3>General Business</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_4_title }}</h3>
+					<p>{{ site.data.index.showcase.item_4_p }}</p>
 				</div>
 				<div class="item">
 					<i class="fas fa-search-dollar"></i>
-					<h3>Marketing</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_5_title }}</h3>
+					<p>{{ site.data.index.showcase.item_5_p }}</p>
 				</div>
 				<div class="item">
 					<i class="fab fa-studiovinari"></i>
-					<h3>Financial Freedom</h3>
-					<p>Nice one matie boy burke hanky panky A bit of how's your father blower boot it's.</p>
+					<h3>{{ site.data.index.showcase.item_6_title }}</h3>
+					<p>{{ site.data.index.showcase.item_6_p }}</p>
 				</div>
 			</div>
 		</div>
@@ -152,18 +153,18 @@ layout: default
 		<div class="stats-holder">
 			<div class="stats-numbers">
 				<div class="stats-n-1">
-					<h1>94%</h1>
-					<p>Business Increase</p>
+					<h1>{{ site.data.index.stats.percent }}</h1>
+					<p>{{ site.data.index.stats.stat_p }}</p>
 				</div>
 				<div class="stats-n-2">
-					<h1 class="countup" data-count="244">224</h1>
-					<p>People Helped</p>
+					<h1 class="countup" data-count="{{ site.data.index.stats.people }}">{{ site.data.index.stats.people }}</h1>
+					<p>{{ site.data.index.stats.people_txt }}</p>
 				</div>
 			</div>
 			<div class="stats-info">
-				<p>The Difference</p>
-				<h3>AMM, True Busniess<br> And Financial Freedom </h3>
-				<button>Learn More</button>
+				<p>{{ site.data.index.stats.smallHeading }}</p>
+				<h3> {{ site.data.index.stats.phrase }} </h3>
+				<button>{{ site.data.index.stats.btn }}</button>
 			</div>
 		</div>
 	</div>

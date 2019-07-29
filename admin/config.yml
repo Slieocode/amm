@@ -14,6 +14,7 @@ collections:
         name: "site"
         file: "_data/site.yml"
         fields:
+          # About Us page Starts
           - label: "about landing page"
             name: "headerAbout"
             widget: "object"
@@ -26,42 +27,69 @@ collections:
               - {label: "Box Two subtext", name: "info_box_2_subtext", widget: "string"}
               - {label: "Box Three Heading", name: "info_box_3_heading", widget: "string"}
               - {label: "Box Three subtext", name: "info_box_3_subtext", widget: "string"}
-      - label: "About Me Page"
-        name: "aboutme"
-        file: "_data/aboutme.yml"
-        fields:
-          - label: "about Me landing page"
-            name: "headerAboutMe"
-            widget: "object"
+        # About Me page Starts
+          - label: "About Me Page"
+            name: "aboutme"
+            file: "_data/aboutme.yml"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Blurb", name: "blurp", widget: "string"}
-              - {label: "my Story", name: "myStory", widget: "markdown"}
-      - label: "Home Page"
-        name: "index"
-        file: "_data/index.yml"
-        widget: 'object'
-        fields:
-          - label: "Header Section"
-            name: "home"
-            widget: "object"
+              - label: "about Me landing page"
+                name: "headerAboutMe"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Blurb", name: "blurp", widget: "string"}
+                  - {label: "my Story", name: "myStory", widget: "markdown"}
+        # Home Page Start                  
+          - label: "Home Page"
+            name: "index"
+            file: "_data/index.yml"
+            widget: 'object'
             fields:
-              - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
-              - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
-              - {label: "Blurb", name: "header_paragraph", widget: "string"}
-          - label: "About Section"
-            name: "about"
-            widget: "object"
-            fields:
-              - {label: "Small Title", name: "about_title_one", widget: "string"}
-              - {label: "Heading Title", name: "about_heading", widget: "string"}
-              - {label: "about paragraph", name: "about_paragraph", widget: "string"}
-              - {label: "First Box Title", name: "about_box_one_title", widget: "string"}
-              - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
-              - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
-              - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
-              - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
-              - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
-              - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
-              - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
-
+              - label: "Header Section"
+                name: "home"
+                widget: "object"
+                fields:
+                  - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
+                  - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
+                  - {label: "Blurb", name: "header_paragraph", widget: "string"}
+              - label: "About Section"
+                name: "about"
+                widget: "object"
+                fields:
+                  - {label: "Small Title", name: "about_title_one", widget: "string"}
+                  - {label: "Heading Title", name: "about_heading", widget: "string"}
+                  - {label: "about paragraph", name: "about_paragraph", widget: "string"}
+                  - {label: "First Box Title", name: "about_box_one_title", widget: "string"}
+                  - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
+                  - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
+                  - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
+                  - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
+                  - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
+                  - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
+                  - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+              - label: "Showcase Section"
+                name: "showcase"
+                widget: "object"
+                fields:
+                  - {label: "Small Title", name: "about_title_one", widget: "string"}
+                  - {label: "Heading Title", name: "about_heading", widget: "string"}
+                  - {label: "about paragraph", name: "about_paragraph", widget: "string"}
+                  - {label: "First Box Title", name: "about_box_one_title", widget: "string"}
+                  - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
+                  - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
+                  - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
+                  - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
+                  - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
+                  - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
+                  - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+              - label: "Statistics Section"
+                name: "stats"
+                widget: "object"
+                fields:
+                  - {label: "Percentage", name: "percent", widget: "string"}
+                  - {label: "Under Percentage", name: "stat_p", widget: "string"}
+                  - {label: "People Number", name: "people", widget: "string"}
+                  - {label: "Under People Number", name: "people_txt", widget: "string"}
+                  - {label: "Small heading", name: "smallHeading", widget: "string"}
+                  - {label: "Phrase", name: "phrase", widget: "string"}
+                  - {label: "button Text", name: "btn", widget: "string"}
