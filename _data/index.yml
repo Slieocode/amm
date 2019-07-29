@@ -1,17 +1,29 @@
 home:
-  header_catch_phrase_one: 'marketing, advertising And Money Saving.'
+  header_catch_phrase_one: 'XXXXD, advertising And Money Saving.'
   header_catch_phrase_two: We got you covered!
-  header_paragraph: XPublic Speaking, Personal Finance, and Information Technology. Strong business development  and IT professional. I also own a blog on Australian Personal Finance and Entrepreneurship.
-
+  header_paragraph: >-
+    XPublic Speaking, Personal Finance, and Information Technology. Strong
+    business development  and IT professional. I also own a blog on Australian
+    Personal Finance and Entrepreneurship.
 about:
-  about_title_one: 'powerful strategies awaits you.'
+  about_box_four_p: >-
+    High-speed internet with over 99% reliability, so you can do stream, and
+    download worry-free all the time 24/7.
+  about_box_four_title: Unbiased Informations
+  about_box_one_p: >-
+    High-speed internet with over 99% reliability, so you can do stream, and
+    download worry-free all the time 24/7.
+  about_box_one_title: General Finance
+  about_box_three_p: >-
+    XHigh-speed internet with over 99% reliability, so you can do stream, and
+    download worry-free all the time 24/7.
+  about_box_three_title: FAQMoney Saving
+  about_box_two_p: >-
+    High-speed internet with over 99% reliability, so you can do stream, and
+    download worry-free all the time 24/7.
+  about_box_two_title: International Finance
   about_heading: '<span class="underline">Nicholas Muscat</span>, Founder & CEO.'
-  about_paragraph: 'Founding small Business which brings a demonstrated history of working in the marketing and advertising industry.'
-  about_box_one_title: 'General Finance'
-  about_box_one_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
-  about_box_two_title: 'International Finance'
-  about_box_two_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
-  about_box_three_title: 'Money Saving'
-  about_box_three_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
-  about_box_four_title: 'Unbiased Informations'
-  about_box_four_p: 'High-speed internet with over 99% reliability, so you can do stream, and download worry-free all the time 24/7.'
+  about_paragraph: >-
+    Founding small Business which brings a demonstrated history of working in
+    the marketing and advertising industry.
+  about_title_one: XQpowerful strategies awaits you.
