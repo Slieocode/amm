@@ -82,14 +82,4 @@ collections:
                   - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
                   - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
                   - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
-              - label: "Statistics Section"
-                name: "stats"
-                widget: "object"
-                fields:
-                  - {label: "Percentage", name: "percent", widget: "string"}
-                  - {label: "Under Percentage", name: "stat_p", widget: "string"}
-                  - {label: "People Number", name: "people", widget: "string"}
-                  - {label: "Under People Number", name: "people_txt", widget: "string"}
-                  - {label: "Small heading", name: "smallHeading", widget: "string"}
-                  - {label: "Phrase", name: "phrase", widget: "string"}
-                  - {label: "button Text", name: "btn", widget: "string"}
+
