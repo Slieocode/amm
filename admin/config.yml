@@ -60,8 +60,8 @@ collections:
               - {label: "First Box paragraph", name: "about_box_one_p", widget: "string"}
               - {label: "Second Box Title", name: "about_box_two_title", widget: "string"}
               - {label: "Second Box paragraph", name: "about_box_two_p", widget: "string"}
-              # - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
-              # - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
-              # - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
-              # - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+              - {label: "Third Box Title", name: "about_box_three_title", widget: "string"}
+              - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
+              - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
+              - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
 
