@@ -52,6 +52,7 @@ collections:
 
           - label: "About Section"
             name: "home"
+            widget: "object"
             fields:
               - {label: "Small Title", name: "about_title_one", widget: "string"}
               - {label: "Heading Title", name: "about_heading", widget: "string"}
