@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: "assets/img/blogs/uploads"
-public_folder: "uploads"
+public_folder: "assets/img/blogs/uploads"
 
 
 collections:
@@ -105,7 +105,7 @@ collections:
               - {label: "Client One Heading", name: "c_1_heading", widget: "string"}
               - {label: "Client One Paragraph", name: "c_1_paragraph", widget: "string"}
               - {label: "Client One Date", name: "c_1_date", widget: "string"}
-              - {label: "Client One Avatar", name: "c_1_img", widget: "image", default: "assets/img/blogs/uploads/" }
+              - {label: "Client One Avatar", name: "c_1_img", widget: "image" }
               - {label: "Client two Heading", name: "c_2_heading", widget: "string"}
               - {label: "Client two Paragraph", name: "c_2_paragraph", widget: "string"}
               - {label: "Client two Date", name: "c_2_date", widget: "string"}
