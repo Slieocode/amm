@@ -20,7 +20,7 @@ description: This is the site's Description, Write everything about you here...
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://focused-mirzakhani-c35ce6.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gallant-shannon-412137.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 facebook_path: https://www.facebook.com/nickolasmuscat
