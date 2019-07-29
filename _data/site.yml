@@ -1,11 +1,26 @@
-headerAbout: {
-          catch_phrase: 'Do less, Get More',
-          subtext: 'Aussiemoneyman The first leading Website tailored Spesifically to Australian Finance and Business in General.',
-          info_box_1_heading: "How AMM got Goal?",
-          info_box_1_subtext: "Aussiemoneyman (AMM) was started with the mission of helping others make, save and invest money in order to allow for a comfortable life and retirement. Nothing upsets me more than to see people working hard every day and not ever achieving financial freedom due only to a lack of education in the field.", 
-          info_box_2_heading: "What is Our Goal",
-          info_box_2_subtext: "With AMM I hope to achieve a solution to this problem by helping others better understand money, learn extra ways to make, save and invest money and learn how to become an entrepreneur with factual and reliable information on how you can better your life through using drive and knowledge to build wealth.",      
-          info_box_3_heading: "Australian Specific Content",
-          info_box_3_subtext: 'There are many websites of this nature tailored to the USA and other countries but a limited amount tailored to Australians when factoring in the limited availability of sites that post regularly on topics that matter from the perspective of an ordinary Australian trying to achieve financial freedom.'  
-} 
-
+headerAbout:
+  catch_phrase: 'Do less, Get More.'
+  info_box_1_heading: How AMM got Goal?
+  info_box_1_subtext: >-
+    Aussiemoneyman (AMM) was started with the mission of helping others make,
+    save and invest money in order to allow for a comfortable life and
+    retirement. Nothing upsets me more than to see people working hard every day
+    and not ever achieving financial freedom due only to a lack of education in
+    the field.
+  info_box_2_heading: What is Our Goal
+  info_box_2_subtext: >-
+    With AMM I hope to achieve a solution to this problem by helping others
+    better understand money, learn extra ways to make, save and invest money and
+    learn how to become an entrepreneur with factual and reliable information on
+    how you can better your life through using drive and knowledge to build
+    wealth.
+  info_box_3_heading: Australian Specific Content
+  info_box_3_subtext: >-
+    There are many websites of this nature tailored to the USA and other
+    countries but a limited amount tailored to Australians when factoring in the
+    limited availability of sites that post regularly on topics that matter from
+    the perspective of an ordinary Australian trying to achieve financial
+    freedom.
+  subtext: >-
+    Aussiemoneyman The first leading Website tailored Spesifically to Australian
+    Finance and Business in General.
