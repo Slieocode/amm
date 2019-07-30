@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Getting started in business usually means setting up a sole trader structure '
-categories: Australian-Content
+categories: money-save
 author: NickolasGmuscat
 date: 2019-07-29T23:09:45.132Z
 featImg: /uploads/23.jpg

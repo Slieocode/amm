@@ -51,5 +51,12 @@
 	$('.card-block h3').each((index, el) =>{
 		$clamp($('.card-block h3')[index], {clamp:2})
 	})
+	/* trim dashes from category text */
+	let elm;
+	$('.category-title').each((index, el)=>{
+		 elm = $(el).text().split('-').join(' ')
+		$(el).text(elm);
+		console.log(el)
+	});
 
 })(window);
