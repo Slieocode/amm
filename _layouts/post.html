@@ -28,10 +28,10 @@ layout: default
 		<div class="all-articles-holder">
 			<h1 style="text-align: center;">You Might Want to read</h1>
 			<section class="card-holder">
-				{% for post in site.posts %}
-					<a href="{{post.url}}">
+				{% for post in site.posts limit:3 %}
+					<a href="{{post.url}}" class="card-link">
 						<div class="card">
-						  <div class="card-img-top" style='background:url("{{site.baseurl}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
+						  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
 						  <div class="card-block">
 						    <div class="category">{{post.categories}}</div>
 						    <h3 class="card-title">{{post.title}}</h3>

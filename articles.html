@@ -25,14 +25,21 @@ layout: default
 		<div class="about-nav">
 			{% include navbar.html %}
 		</div>
-			
+
+		<!-- /search -->
+
 		<div class="search">
 			<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-			<form class="search__form" action="">
-				<input class="search__input" name="search" type="search" placeholder="Find..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+
+			<form class="search__form" action="get" id="site_search">
+				<input class="search__input" id="search_box" name="search" type="search" placeholder="Find..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
 				<span class="search__info">Hit enter to search or ESC to close</span>
 			</form>
-		</div><!-- /search -->
+
+
+		</div>
+
+		<!-- /search -->
 	</header>
 		<div class="container">
 			
@@ -46,7 +53,9 @@ layout: default
 					<div class="search-wrap">
 						<button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
 					</div>
+					<ul id="search_results"></ul>
 				</div>
+				<hr class="fasil">
 				<div class="all-articles-holder">
 						{% for category in site.categories %}
 						 <h1 class="category-title">{{ category[0] | join: '' }}</h1>

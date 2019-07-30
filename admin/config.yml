@@ -128,7 +128,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "category (must be lower case And use dashes between Words e.g: business-marketing)", name: "categories", widget: "string"}
+      - {label: "category (must be lowercase And use dashes between Words e.g: business-marketing)", name: "categories", widget: "string"}
       - {label: "author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featImg", widget: "image"}

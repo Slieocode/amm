@@ -91,7 +91,7 @@ a,
 	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
-	padding: 2.5em 2.75em 2.5em 1.5em;
+	padding: 2.5em 2.75em 0 0;
 	h1{
 		// margin:0 auto;
 		flex-basis: 50%;
@@ -213,9 +213,11 @@ svg.icon--cross *{
 .js .search {
 	position: fixed;
 	top: 0;
+	bottom:0;
 	left: 0;
 	width: 100%;
-	height: 50vh;
+	height: 100vh;
+	transition:.5s;
 }
 
 .btn--search-close {
@@ -449,6 +451,17 @@ svg.icon--cross *{
   line-height: 100%;
   font-size:.8em;
   letter-spacing: 0.06rem;
+}
+.category-title{
+	color:#dd0042;
+	text-transform: uppercase;
+}
+
+hr.fasil{
+	width:100%;
+	height:2px;
+	background:#DDD !important;
+	border:none;
 }
 .card .card-block .card-title {
   color: #000;
