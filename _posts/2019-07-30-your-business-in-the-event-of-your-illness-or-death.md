@@ -1,7 +1,7 @@
 ---
 layout: post
 title: your business in the event of your illness or death;
-categories: Australian Content
+categories: Australian-Content
 author: NickolasGmuscat
 date: 2019-07-29T23:09:45.132Z
 featImg: /uploads/4.jpg
