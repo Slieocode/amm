@@ -48,19 +48,22 @@ layout: default
 					</div>
 				</div>
 				<div class="all-articles-holder">
-					<section class="card-holder">
-						{% for post in site.posts %}
-							<a href="{{post.url}}">
-								<div class="card">
-								  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
-								  <div class="card-block">
-								    <div class="category">{{post.categories}}</div>
-								    <h3 class="card-title">{{post.title}}</h3>
-								  </div>
-								</div>
-							</a>
-						{% endfor %}
-					</section>
+						{% for category in site.categories %}
+						 <h1>{{ category[0] }}</h1>
+						<section class="card-holder">
+							    {% for post in category[1] %}
+									<a href="{{post.url}}" class="card-link">
+										<div class="card">
+										  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
+										  <div class="card-block">
+										    <div class="category">{{post.categories}}</div>
+										    <h3 class="card-title">{{post.title}}</h3>
+										  </div>
+										</div>
+									</a>
+    							{% endfor %}
+						</section>
+					{% endfor %}
 				</div>
 		</main>
 	</div>

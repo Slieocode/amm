@@ -6,6 +6,7 @@ author: NickolasGmuscat
 date: 2019-07-29T23:09:45.132Z
 featImg: /uploads/23.jpg
 ---
+
 <p>This is AMM's second guest post! I do not often allow guest posters, this means you know when there is one it is of quality. Today we touch more on the business side of AMM and discuss the move for entrepreneurs from sole trader to company!
 
 Getting started in business usually means setting up a sole trader structure from day one. The simple and cost-effective nature of this business structure is what makes it so appealing to entrepreneurs across Australia, as well as the full control it gives the owner.

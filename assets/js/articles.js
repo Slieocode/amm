@@ -46,4 +46,10 @@
 
 	init();
 
+	/* Clamping text */
+
+	$('.card-block h3').each((index, el) =>{
+		$clamp($('.card-block h3')[index], {clamp:2})
+	})
+
 })(window);
