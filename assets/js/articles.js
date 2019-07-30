@@ -15,12 +15,12 @@
 	function initEvents() {
 		openCtrl.addEventListener('click', openSearch);
 		closeCtrl.addEventListener('click', closeSearch);
-		document.addEventListener('keyup', function(ev) {
-			// escape key.
-			if( ev.keyCode == 27 ) {
-				closeSearch();
-			}
-		});
+		// document.addEventListener('keyup', function(ev) {
+		// 	// escape key.
+		// 	if( ev.keyCode == 27 ) {
+		// 		alert('')
+		// 	}
+		// });
 	}
 
 	function openSearch() {
@@ -41,7 +41,6 @@
 		document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
 			el.style.display = 'none';	
 		})
-		loading();
 		$('.js .search').css({background:"none"})
 	}
 

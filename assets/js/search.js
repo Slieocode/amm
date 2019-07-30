@@ -90,6 +90,13 @@ function closeSearch() {
 }
 
 function initSearch() {
+  
+  // document.addEventListener('keyup', function(ev) {
+  //     // escape key.
+  //     if( ev.keyCode == 27 ) {
+  //       alert('')
+  //     }
+  //   });
 
     // Get search results if q parameter is set in querystring
     if (getParameterByName('q')) {
@@ -100,6 +107,9 @@ function initSearch() {
 
     // Get search results on submission of form
     $(document).on("submit", $searchForm, function(e) {
+        if($('.search__input').val().length === 0){
+          return false;
+        }
         e.preventDefault();
         q = $searchInput.val();
         execSearch(q);
