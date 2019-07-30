@@ -51,16 +51,30 @@ $(document).ready( function() {
  * Shows results based on querystring if present.
  * Binds search function to form submission.
  */
+ function clampingTitle(){
+     // clamping the blog title
+   $('.js .search').css({background:"none"})
+   $('.card-block h3').each((index, el) =>{
+      $clamp($('.card-block h3')[index], {clamp:2})
+    })
+    /* trim dashes from category text */
+    let elm;
+    $('.category-title').each((index, el)=>{
+       elm = $(el).text().split('-').join(' ')
+      $(el).text(elm);
+      console.warn(el)
+    });  
+ }
+
 
 function closeSearch() {
-  pageContainer.classList.remove('page--move');
-  searchContainer.classList.remove('search--open');
-  inputSearch.blur();
-  inputSearch.value = '';
-  document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
-    el.style.display = 'none';  
-})
-$('.js .search').css({background:"none"})
+    pageContainer.classList.remove('page--move');
+    searchContainer.classList.remove('search--open');
+    inputSearch.blur();
+    inputSearch.value = '';
+    document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
+      el.style.display = 'none';  
+  })
 }
 
 function initSearch() {
@@ -133,7 +147,10 @@ function processData() {
         $.each(data, function(index, item) {
             // check if search term is in content or title 
             console.log(item)
-            if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
+            console.warn(q)
+            if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || 
+                item.title.toLowerCase().indexOf(q.toLowerCase()) > -1) ||
+                item.category.toLowerCase().indexOf(q.toLowerCase()) > -1) {
                 var result = populateResultContent($resultTemplate.html(), item);
                 resultsCount++;
                 results += result;
@@ -146,6 +163,7 @@ function processData() {
 
         populateResultsString(resultsCount);
         showSearchResults(results);
+
     }
 }
 
@@ -158,6 +176,7 @@ function processData() {
 function showSearchResults(results) {
     // Add results HTML to placeholder
     $resultsPlaceholder.html(results);
+    clampingTitle();
 }
 
 

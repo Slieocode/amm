@@ -1,9 +1,9 @@
 ---
 layout: post
 title: >-
-  business structure is what makes it so appealing to entrepreneurs across
+  Marketing and business man gets into prison for something he didn't commit
   Australia
-categories: money-save
+categories: finance
 author: NickolasGmuscat
 date: 2019-07-29T23:09:45.132Z
 featImg: /uploads/2.jpg
