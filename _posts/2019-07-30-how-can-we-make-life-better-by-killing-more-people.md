@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How can we make life better by killing more people
-categories: dm
+categories: Money
 author: NickolasGmuscat
 date: 2019-07-29T23:09:45.132Z
 featImg: /uploads/23.jpg
