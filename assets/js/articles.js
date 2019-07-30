@@ -41,6 +41,7 @@
 		document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
 			el.style.display = 'none';	
 		})
+		loading();
 		$('.js .search').css({background:"none"})
 	}
 
@@ -56,7 +57,6 @@
 	$('.category-title').each((index, el)=>{
 		 elm = $(el).text().split('-').join(' ')
 		$(el).text(elm);
-		console.log(el)
 	});
 
 })(window);

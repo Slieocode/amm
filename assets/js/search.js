@@ -62,12 +62,24 @@ $(document).ready( function() {
     $('.category-title').each((index, el)=>{
        elm = $(el).text().split('-').join(' ')
       $(el).text(elm);
-      console.warn(el)
     });  
  }
+function loading(){
+  if ($("#progress").length === 0) {
+    // inject the bar..
+    $("body").append($("<div><b></b><i></i></div>").attr("id", "progress"));
+    
+    // animate the progress..
+    $("#progress").width("101%").delay(800).fadeOut(1000, function() {
+      // ..then remove it.
+      $(this).remove();
+    });  
+  }
+} 
 
 
 function closeSearch() {
+    loading();
     pageContainer.classList.remove('page--move');
     searchContainer.classList.remove('search--open');
     inputSearch.blur();
@@ -146,8 +158,6 @@ function processData() {
 
         $.each(data, function(index, item) {
             // check if search term is in content or title 
-            console.log(item)
-            console.warn(q)
             if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || 
                 item.title.toLowerCase().indexOf(q.toLowerCase()) > -1) ||
                 item.category.toLowerCase().indexOf(q.toLowerCase()) > -1) {
