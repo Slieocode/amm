@@ -31,11 +31,10 @@ layout: default
 		<div class="search">
 			<button id="btn-search-close" class="btn btn--search-close" aria-label="Close search form"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 
-			<form class="search__form" action="get" id="site_search">
-				<input class="search__input" id="search_box" name="search" type="search" placeholder="Find..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+			<form class="search__form" action="get" data-search-form id="site_search">
+				<input class="search__input" id="q" name="q" data-search-input type="search" placeholder="Find..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
 				<span class="search__info">Hit enter to search or ESC to close</span>
 			</form>
-
 
 		</div>
 
@@ -53,7 +52,10 @@ layout: default
 					<div class="search-wrap">
 						<button id="btn-search" class="btn btn--search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
 					</div>
-					<ul id="search_results"></ul>
+					  <p data-search-found>
+					   <span data-search-found-count></span> result(s) found for &ldquo;
+					   <span data-search-found-term></span>&rdquo;.</p>
+					   <section class="card-holder search-res" data-search-results></section>
 				</div>
 				<hr class="fasil">
 				<div class="all-articles-holder">
@@ -79,3 +81,15 @@ layout: default
 </div>
 
 {% include footer.html %}
+
+  <script type="text/x-template" id="search-result">
+		<a href="##Url##" class="card-link">
+			<div class="card">
+			  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/##featImg##");' alt="Blog image cap"></div>
+			  <div class="card-block">
+			    <div class=" category-title category">##categories##</div>
+			    <h3 class="card-title">##Title##</h3>
+			  </div>
+			</div>
+		</a>
+  </script>

@@ -1,74 +1,221 @@
-jQuery(function() {
-  // Initialize lunr with the fields to be searched, plus the boost.
-    var pageContainer = document.querySelector('.page'),
+/**
+ * A simple JSON search
+ * Requires jQuery (v 1.7+)
+ *
+ * @author  Mat Hayward - Erskine Design
+ * @version  0.1
+ */
+
+
+ /* ==========================================================================
+    Initialisation
+    ========================================================================== */
+
+var q, jsonFeedUrl = "/feeds/feed.json",
+    $searchForm = $("[data-search-form]"),
+    $searchInput = $("[data-search-input]"),
+    $resultTemplate = $("#search-result"),
+    $resultsPlaceholder = $("[data-search-results]"),
+    $foundContainer = $("[data-search-found]"),
+    $foundTerm = $("[data-search-found-term]"),
+    $foundCount = $("[data-search-found-count]"),
+    allowEmpty = true,
+    showLoader = true,
+    loadingClass = "is--loading";
+    // Input field variables
+var pageContainer = document.querySelector('.page'),
     openCtrl = document.getElementById('btn-search'),
     closeCtrl = document.getElementById('btn-search-close'),
     searchContainer = document.querySelector('.search'),
     inputSearch = searchContainer.querySelector('.search__input');
 
-  window.idx = lunr(function () {
-    this.field('id');
-    this.field('title');
-    this.field('content', { boost: 10 });
-    this.field('author');
-    this.field('categories');
-  });
 
-  // Get the generated search_data.json file so lunr.js can search it locally.
-  window.data = $.getJSON('/search_data.json');
+$(document).ready( function() {
+    // hide items found string
+    $foundContainer.hide();
 
-  // Wait for the data to load and add it to lunr
-  window.data.then(function(loaded_data){
-    $.each(loaded_data, function(index, value){
-      window.idx.add(
-        $.extend({ "id": index }, value)
-      );
-    });
-  });
-  function closeSearch() {
-    pageContainer.classList.remove('page--move');
-    searchContainer.classList.remove('search--open');
-    inputSearch.blur();
-    inputSearch.value = '';
-    document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
-      el.style.display = 'none';  
-    })
-    $('.js .search').css({background:"none"})
-  }
-
-  // Event when the form is submitted
-  $("#site_search").submit(function(event){
-      event.preventDefault();
-      var query = $("#search_box").val(); // Get the value for the text field
-      var results = window.idx.search(query); // Get lunr to perform a search
-      display_search_results(results); // Hand the results off to be displayed
-      closeSearch() // close search bar
-  });
-
-  function display_search_results(results) {
-    var $search_results = $("#search_results");
-
-    // Wait for data to load
-    window.data.then(function(loaded_data) {
-
-      // Are there any results?
-      if (results.length) {
-        $search_results.empty(); // Clear any old results
-
-        // Iterate over the results
-        results.forEach(function(result) {
-          var item = loaded_data[result.ref];
-
-          // Build a snippet of HTML for this result
-          var appendString = '<li><a href="' + item.url + '">' + item.title + '</a></li>';
-
-          // Add the snippet to the collection of results.
-          $search_results.append(appendString);
-        });
-      } else {
-        // If there are no results, let the user know.
-        $search_results.html('<li>No results found.<br/>Please check spelling, spacing, yada...</li>');
-      }
-    });
-  }
+    // initiate search functionality
+    initSearch();
 });
+
+
+
+
+ /* ==========================================================================
+    Search functions
+    ========================================================================== */
+ 
+
+/**
+ * Initiate search functionality.
+ * Shows results based on querystring if present.
+ * Binds search function to form submission.
+ */
+
+function closeSearch() {
+  pageContainer.classList.remove('page--move');
+  searchContainer.classList.remove('search--open');
+  inputSearch.blur();
+  inputSearch.value = '';
+  document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
+    el.style.display = 'none';  
+})
+$('.js .search').css({background:"none"})
+}
+
+function initSearch() {
+
+    // Get search results if q parameter is set in querystring
+    if (getParameterByName('q')) {
+        q = decodeURIComponent(getParameterByName('q'));
+        $searchInput.val(q);
+        execSearch(q);
+    }
+
+    // Get search results on submission of form
+    $(document).on("submit", $searchForm, function(e) {
+        e.preventDefault();
+        q = $searchInput.val();
+        execSearch(q);
+        closeSearch();
+    });
+}
+
+
+/**
+ * Executes search
+ * @param {String} q 
+ * @return null
+ */
+function execSearch(q) {
+    if (q != '' || allowEmpty) {
+        if (showLoader) {
+            toggleLoadingClass();
+        }
+
+        getSearchResults(processData());
+    }
+}
+
+
+/**
+ * Toggles loading class on results and found string
+ * @return null
+ */
+function toggleLoadingClass() {
+    $resultsPlaceholder.toggleClass(loadingClass);
+    $foundContainer.toggleClass(loadingClass);
+}
+
+
+/**
+ * Get Search results from JSON
+ * @param {Function} callbackFunction 
+ * @return null
+ */
+function getSearchResults(callbackFunction) {
+    $.get(jsonFeedUrl, callbackFunction, 'json');
+}
+
+
+/**
+ * Process search result data
+ * @return null
+ */
+function processData() {
+    $results = [];
+    
+    return function(data) {
+        
+        var resultsCount = 0,
+            results = "";
+
+        $.each(data, function(index, item) {
+            // check if search term is in content or title 
+            console.log(item)
+            if (item.search_omit != "true" && (item.content.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1)) {
+                var result = populateResultContent($resultTemplate.html(), item);
+                resultsCount++;
+                results += result;
+            }
+        });
+
+        if (showLoader) {
+            toggleLoadingClass();
+        }
+
+        populateResultsString(resultsCount);
+        showSearchResults(results);
+    }
+}
+
+
+/**
+ * Add search results to placeholder
+ * @param {String} results
+ * @return null
+ */
+function showSearchResults(results) {
+    // Add results HTML to placeholder
+    $resultsPlaceholder.html(results);
+}
+
+
+/**
+ * Add results content to item template
+ * @param {String} html 
+ * @param {object} item
+ * @return {String} Populated HTML
+ */
+function populateResultContent(html, item) {
+    html = injectContent(html, item.title, '##Title##');
+    html = injectContent(html, item.link, '##Url##');
+    html = injectContent(html, item.category, '##categories##');
+    html = injectContent(html, item.featImg, '##featImg##');
+    html = injectContent(html, item.excerpt, '##Excerpt##');
+    html = injectContent(html, item.date, '##Date##');
+    return html;
+}
+
+
+/**
+ * Populates results string
+ * @param {String} count 
+ * @return null
+ */
+function populateResultsString(count) {
+    $foundTerm.text(q);
+    $foundCount.text(count);
+    $foundContainer.show();
+}
+
+
+
+
+ /* ==========================================================================
+    Helper functions
+    ========================================================================== */
+
+
+/**
+ * Gets query string parameter - taken from http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+ * @param {String} name 
+ * @return {String} parameter value
+ */
+function getParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+
+/**
+ * Injects content into template using placeholder
+ * @param {String} originalContent
+ * @param {String} injection
+ * @param {String} placeholder 
+ * @return {String} injected content
+ */
+function injectContent(originalContent, injection, placeholder) {
+    var regex = new RegExp(placeholder, 'g');
+    return originalContent.replace(regex, injection);
+}

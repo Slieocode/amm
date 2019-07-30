@@ -398,7 +398,10 @@ svg.icon--cross *{
 
 
 /* Blogs Cards */
-
+.search-res{
+	padding:0 !important;
+	margin:0 !important;
+}
 .all-articles-holder{
 	display: flex;
 	flex-direction: column;
@@ -413,7 +416,8 @@ svg.icon--cross *{
 	flex-wrap:wrap;
 }
 .card-link{
-	margin-right: 7%;
+	margin-right: 5%;
+	margin-top:5%;
 }
 .card {
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
