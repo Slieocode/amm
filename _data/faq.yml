@@ -3,6 +3,7 @@ faq:
   header_p: We receive hundreds of messages a week and many are the same. Should yours not appear you can contact us <a target="_base" href="/contact">here</a>
   main_h1: Have Some Questions?
   main_p: We receive hundreds of messages a week and many are the same. Should yours not appear you can contact us here
+
 faq_one:  
   faq_1_h1: FAQ AMM
   faq_1_q1: WHAT DO WE DO?
@@ -16,6 +17,7 @@ faq_one:
   faq_1_q5: WHY DON’T I JUST GO TO A FINANCIAL ADVISER?
   faq_1_a5: You may wish to go to a financial advisor if you require financial advice and specifically tailored financial advice. Though it can generally be said unless you have a sizeable portfolio to invest, you may not be of benefit to do so.
 
+faq_two:
   faq_2_h1: FAQ Nicholas
   faq_2_q1: WHO IS NICHOLAS G. MUSCAT AND WHAT DOES HE DO?
   faq_2_a1: Nicholas is a serial entrepreneur and businessman who began in his early teens. Nicholas has been studying the most efficient ways to do things from business to finance since the day he began and decided to share his research online. <br><a target="_base" style="color:#fea212;font-weight:bold;" href="/about">You can read about Nicholas here</a>.
@@ -26,6 +28,7 @@ faq_one:
   faq_2_q4: I am from the Media; can I interview Nicholas?
   faq_2_a4: Possibly, yes! ! Feel free to contact us with further information <a target="_base" style="color:#fea212;font-weight:bold;" href="/contact">here</a>.
 
+faq_three:
   faq_3_h1: Business With AMM
   faq_3_q1: CAN I WORK WITH AMM?
   faq_3_a1: Possibly, yes! Feel free to contact us and propose your commercial arrangement.

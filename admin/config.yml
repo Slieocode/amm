@@ -51,6 +51,7 @@ collections:
               - {label: "FAQ Header Paragraph", name: "header_p", widget: "string"}
               - {label: "Main Heading", name: "main_h1", widget: "string"}
               - {label: "Main Paragraph", name: "main_p", widget: "string"}
+          
           - label: "FAQ One"
             name: "faq_one"
             widget: "object"
@@ -66,6 +67,20 @@ collections:
               - {label: "Answer 4", name: "faq_1_a4", widget: "string"}
               - {label: "Question 5", name: "faq_1_q5", widget: "string"}
               - {label: "Answer 5", name: "faq_1_a5", widget: "string"}
+
+          - label: "FAQ Two"
+            name: "faq_two"
+            widget: "object"
+            fields:
+              - {label: "FAQ Two Heading", name: "faq_2_h1", widget: "string"}
+              - {label: "Question 1", name: "faq_2_q1", widget: "string"}
+              - {label: "Answer 1", name: "faq_2_a1", widget: "string"}
+              - {label: "Question 2", name: "faq_2_q2", widget: "string"}
+              - {label: "Answer 2", name: "faq_2_a2", widget: "string"}
+              - {label: "Question 3", name: "faq_2_q3", widget: "string"}
+              - {label: "Answer 3", name: "faq_2_a3", widget: "string"}
+              - {label: "Question 4", name: "faq_2_q4", widget: "string"}
+              - {label: "Answer 4", name: "faq_2_a4", widget: "string"}
 
         # Home page              
       - label: "Home Page"
