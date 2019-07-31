@@ -82,6 +82,16 @@ collections:
               - {label: "Question 4", name: "faq_2_q4", widget: "string"}
               - {label: "Answer 4", name: "faq_2_a4", widget: "string"}
 
+          - label: "FAQ Three"
+            name: "faq_three"
+            widget: "object"
+            fields:
+              - {label: "FAQ Three Heading", name: "faq_3_h1", widget: "string"}
+              - {label: "Question 1", name: "faq_3_q1", widget: "string"}
+              - {label: "Answer 1", name: "faq_3_a1", widget: "string"}
+              - {label: "Question 2", name: "faq_3_q2", widget: "string"}
+              - {label: "Answer 2", name: "faq_3_a2", widget: "string"}
+
         # Home page              
       - label: "Home Page"
         name: "index"
