@@ -52,7 +52,7 @@ collections:
               - {label: "Main Heading", name: "main_h1", widget: "string"}
               - {label: "Main Paragraph", name: "main_p", widget: "string"}
           - label: "FAQ One"
-            name: "faq"
+            name: "faq_one"
             widget: "object"
             fields:
               - {label: "FAQ One Heading", name: "faq_1_h1", widget: "string"}
