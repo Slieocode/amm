@@ -1,41 +1,5 @@
 faq:
-  heading_h1: Answering Your Questions
-  header_p: We receive hundreds of messages a week and many are the same. Should yours not appear you can contact us <a target="_base" href="/contact">here</a>
-  main_h1: Have Some Questions?
-  main_p: We receive hundreds of messages a week and many are the same. Should yours not appear you can contact us here
-  faq_1_h1: FAQ AMM
-  faq_1_q1: WHAT DO WE DO?
-  faq_1_a1: We provide free, holistic, unbiased and unique information on business and finance topics.
-  faq_1_q2: DO WE SELL ANYTHING?
-  faq_1_a2: No, all our content is free. We pride ourselves on providing free, holistic, unbiased and unique information.
-  faq_1_q3: HOW CAN I MAKE MORE MONEY?
-  faq_1_a3: We have shared various methods one may make some extra income and recommend you head here for more.
-  faq_1_q4: CAN YOU ADVISE ON INVESTMENTS?
-  faq_1_a4: No, we do NOT hold an Australian Financial Services Licence (AFSL). Therefore, we cannot give individual financial advice and in fact any financial advice as a whole, including general. We present facts and figures from experiences using various platforms and fit into exemption (s911A(2)(ec)) as the sole and principal purpose of our content is NOT to provide financial advice but is rather factual information.
-  faq_1_q5: WHY DON’T I JUST GO TO A FINANCIAL ADVISER?
-  faq_1_a5: You may wish to go to a financial advisor if you require financial advice and specifically tailored financial advice. Though it can generally be said unless you have a sizeable portfolio to invest, you may not be of benefit to do so.
-
-  faq_2_h1: FAQ Nicholas
-  faq_2_q1: WHO IS NICHOLAS G. MUSCAT AND WHAT DOES HE DO?
-  faq_2_a1: Nicholas is a serial entrepreneur and businessman who began in his early teens. Nicholas has been studying the most efficient ways to do things from business to finance since the day he began and decided to share his research online. <br><a target="_base" style="color:#fea212;font-weight:bold;" href="/about">You can read about Nicholas here</a>.
-  faq_2_q2: Can I meet up with Nicholas when he is in my city?
-  faq_2_a2: No, Nicholas for the most part does not make time to have personal meet ups without specific agendas present. 
-  faq_2_q3: Can Nicholas speak at my event?
-  faq_2_a3: Nicholas in rare instances may be available to do so, please get in contact.
-  faq_2_q4: I am from the Media; can I interview Nicholas?
-  faq_2_a4: Possibly, yes! ! Feel free to contact us with further information <a target="_base" style="color:#fea212;font-weight:bold;" href="/contact">here</a>.
-
-  faq_3_h1: Business With AMM
-  faq_3_q1: CAN I WORK WITH AMM?
-  faq_3_a1: Possibly, yes! Feel free to contact us and propose your commercial arrangement.
-  faq_3_q2: HOW CAN I WORK FOR AMM?
-  faq_3_a2: We are not actively hiring as of current and recently went through our last recruitment round. Should you be interested you may wish to <a target="_base" style="color:#fea212;font-weight:bold;" href="/contact">contact us</a>.
-
-
-
-
-
-
-
-
-
+  header_p: >-
+    We receive hundreds of messages a week and many are the same. Should yours
+    not appear you can contact us <a target="_base" href="/contact">here</a>
+  heading_h1: Answering Your Questions.
