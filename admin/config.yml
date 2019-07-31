@@ -38,6 +38,18 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Blurb", name: "blurp", widget: "string"}
               - {label: "my Story", name: "myStory", widget: "markdown"}
+        # FAQ Page
+      - label: "FAQ Page"
+        name: "faq"
+        file: "_data/faq.yml"
+        fields:
+          - label: "faq Landing page"
+            name: "faq"
+            widget: "object"
+            fields:
+              - {label: "FAQ Header Heading", name: "heading_h1", widget: "string"}
+              - {label: "FAQ Header Paragraph", name: "header_p", widget: "string"}
+
         # Home page              
       - label: "Home Page"
         name: "index"

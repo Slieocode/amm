@@ -3,12 +3,12 @@
 [X]Home:x
 [X]Articles:
 [X]Blog: 
-   [X]sub categories
-[] Make the Site Editable
+   [X]sub categories:
+[X] Make the Site Editable:
+[X]Search Engine Implementation:
+[X]FAQS:
 -------------------------------------
-[]FAQS:
-[]Services and reccomendations:
+[]Services and recommendations:
 []eBook:
-[]Contact
-[]Search Engine Implementation
-[]Make Changes
+[]Contact:
+[]Make Changes:
