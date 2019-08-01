@@ -8,8 +8,8 @@
 [X]Search Engine Implementation:
 [X]FAQS:
 [X]Contact:
+[X]Policy Page:
 -------------------------------------
 []Services and recommendations:
 []eBook:
-[]Policy Page:
 []Make Changes:

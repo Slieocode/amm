@@ -3,7 +3,8 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: "assets/img/blogs/uploads"
-public_folder: "uploads"
+public_folder: "assets/img/blogs/uploads"
+image: 'assets/img/blogs/uploads'
 
 
 collections:
