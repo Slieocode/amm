@@ -1,0 +1,27 @@
+.services-header{
+	height: 530px;
+	background: url('../img/services/01.jpg') no-repeat;
+	background-size:cover;
+	.overlay{
+		background: rgba(0, 0, 0, 0.6);		
+	}
+	.services-holder{
+		display: flex;
+		margin-top:5%;
+		justify-content: left;
+	}
+	.services-text{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 57%;
+		h1{
+		    font-size: 3.5em;
+		}
+		p{
+		    font-size: 1.5em;
+		    margin:0;
+			a{color:skyblue;}
+		}
+	}
+
+}

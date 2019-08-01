@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<header class="contact-header">
+	<div class="about-nav">
+		{% include navbar.html %}
+	</div>
+	<div class="container">
+		<div class="faq-holder contact-holder">
+			<div class="faq-text contact-text">
+				<h1> We'd Love to Hear From You! </h1>
+				<p>if you have any questions, inquiries, suggestions or offers we'd love to hear from you, you can contact us down below and we will get in touch as soon as possible </p>
+			</div>
+		</div>
+	</div>
+ <div class="overlay"></div>
+</header>
+
+<section class="contact-form">
+	<div class="container">
+		<form action="/">
+		    <p>GET IN TOUCH</p>
+		    
+		    <div class="login">
+				<label>
+				    <input type="text" required="required"/>
+				    <span>Name</span>
+				<label>
+				<label>
+				    <input type="text" required="required"/>
+				    <span>Email</span>					
+				</label>
+				<label>
+				    <input type="text" required="required"/>
+				    <span>Subject</span>					
+				</label>
+		    </div>
+		    <div class="msg">
+		      <textarea  class="area" placeholder="Leave a Message"></textarea>
+		    </div>
+		    
+		    <button class="btn" type="submit"> Send Message </button>
+		</form>
+	</div>
+</section>
+
+{% include footer.html %}

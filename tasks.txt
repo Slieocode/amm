@@ -7,8 +7,9 @@
 [X] Make the Site Editable:
 [X]Search Engine Implementation:
 [X]FAQS:
+[X]Contact:
 -------------------------------------
 []Services and recommendations:
 []eBook:
-[]Contact:
+[]Policy Page:
 []Make Changes:

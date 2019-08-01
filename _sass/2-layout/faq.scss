@@ -2,6 +2,7 @@
 	height: 530px;
 	background: url('../img/faq/01.jpg') no-repeat;
 	background-size:cover;
+	background-attachment: fixed;
 	.overlay{
 		background: rgba(0, 0, 0, 0.6);		
 	}
@@ -47,7 +48,7 @@
 	    }
 	}
 
-.faq{
+	.faq{
 		.faq-content{
 			margin-top:10%;
 		}

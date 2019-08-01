@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header class="policy-header faq-header">
+	<div class="about-nav">
+		{% include navbar.html %}
+	</div>
+	<div class="container">
+		<div class="faq-holder contact-holder">
+			<div class="faq-text contact-text">
+				<h1> {{site.data.policy.policy.policy_h1}} </h1>
+				<p> {{site.data.policy.policy.policy_p1}} </p>			
+			</div>
+		</div>
+
+		</div>
+	</div>
+	<div class="overlay"></div>
+</header>
+<section class="terms">
+	<div class="container">
+			{{ site.data.policy.policy.content }}	
+	</div>
+
+</section>
+
+
+{% include footer.html %}
