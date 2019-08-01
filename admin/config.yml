@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 media_folder: "assets/img/blogs/uploads"
-public_folder: "/uploads"
+public_folder: "assets/img/blogs/uploads"
 
 
 collections:
@@ -197,5 +197,5 @@ collections:
       - {label: "category (must be lowercase And use dashes between Words e.g: business-marketing)", name: "categories", widget: "string"}
       - {label: "author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featImg", widget: "image"}
+      - {label: "Featured Image", name: "featImg", widget: "image", default: '/uploads'}
       - {label: "Body", name: "body", widget: "markdown"}
