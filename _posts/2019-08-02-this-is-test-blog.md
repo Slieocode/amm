@@ -2,13 +2,11 @@
 layout: post
 title: this is test blog
 categories: testing
-author: Nomad
+author: NickolasGmuscat
 date: 2019-08-01T17:05:10.556Z
 featImg: /uploads/breed2-free-portfolio-website-templates-1000x750.jpg
 ---
 Today is a good day Since 
-
-
 
  <p>
 
@@ -18,4 +16,4 @@ Today is a good day Since
 
 <h3>This is some text here</h3>
 
-![something](/uploads/23.jpg "none")
+![something](/uploads/13.jpg "none")
