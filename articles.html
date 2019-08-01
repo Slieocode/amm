@@ -65,7 +65,7 @@ layout: default
 							    {% for post in category[1] %}
 									<a href="{{post.url}}" class="card-link">
 										<div class="card">
-										  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
+										  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap"></div>
 										  <div class="card-block">
 										    <div class=" category-title category">{{post.categories | join:' '}}</div>
 										    <h3 class="card-title">{{post.title}}</h3>
@@ -85,7 +85,7 @@ layout: default
   <script type="text/x-template" id="search-result">
 		<a href="##Url##" class="card-link">
 			<div class="card">
-			  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/##featImg##");' alt="Blog image cap"></div>
+			  <div class="card-img-top" style='background:url("{{site.url}}/##featImg##");' alt="Blog image cap"></div>
 			  <div class="card-block">
 			    <div class="category-title category">##categories##</div>
 			    <h3 class="card-title">##Title##</h3>
