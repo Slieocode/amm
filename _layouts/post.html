@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header class="header-blog" style="background:url('{{site.url}}/assets/img/blogs/{{page.featImg}}')">
+<header class="header-blog" style="background:url('{{site.url}}/{{page.featImg}}')">
 	<div class="about-nav">
 		{% include navbar.html %}		
 	</div>
@@ -31,7 +31,7 @@ layout: default
 				{% for post in site.posts limit:3 %}
 					<a href="{{post.url}}" class="card-link">
 						<div class="card">
-						  <div class="card-img-top" style='background:url("{{site.url}}/assets/img/blogs/{{post.featImg}}");' alt="Blog image cap"></div>
+						  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap"></div>
 						  <div class="card-block">
 						    <div class="category">{{post.categories}}</div>
 						    <h3 class="card-title">{{post.title}}</h3>
