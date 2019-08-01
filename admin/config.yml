@@ -41,7 +41,7 @@ collections:
       # Policy Me page
       - label: "Terms And Policies Page"
         name: "policy"
-        file: "_data/aboutme.yml"
+        file: "_data/policy.yml"
         fields:
           - label: "Policy landing page"
             name: "policy"
