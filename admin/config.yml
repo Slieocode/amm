@@ -49,7 +49,7 @@ collections:
             fields:
               - {label: "Header Heading", name: "policy_h1", widget: "string"}
               - {label: "Header Paragraph", name: "policy_p1", widget: "string"}
-              - {label: "Section Content", name: "content", widget: "string"}
+              - {label: "Section Content", name: "content", widget: "markdown"}
         # FAQ Page
       - label: "FAQ Page"
         name: "faq"
