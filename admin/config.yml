@@ -4,7 +4,6 @@ backend:
 
 media_folder: "assets/img/blogs/uploads"
 public_folder: "assets/img/blogs/uploads"
-image: 'assets/img/blogs/uploads'
 
 
 collections:
