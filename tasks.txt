@@ -1,6 +1,6 @@
-[X]About AMM:x
-[X]About Nicholas:x
-[X]Home:x
+[X]About AMM:
+[X]About Nicholas:
+[X]Home:
 [X]Articles:
 [X]Blog: 
    [X]sub categories:
@@ -9,7 +9,8 @@
 [X]FAQS:
 [X]Contact:
 [X]Policy Page:
+[X]Services:
+[X]recommendations:
 -------------------------------------
-[]Services and recommendations:
 []eBook:
 []Make Changes:

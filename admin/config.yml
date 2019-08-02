@@ -50,6 +50,41 @@ collections:
               - {label: "Header Heading", name: "policy_h1", widget: "string"}
               - {label: "Header Paragraph", name: "policy_p1", widget: "string"}
               - {label: "Section Content", name: "content", widget: "markdown"}
+      # Services  page
+      - label: "Services Page"
+        name: "services"
+        file: "_data/services.yml"
+        fields:
+          - label: "Policy landing page"
+            name: "serv"
+            widget: "object"
+            fields:
+              - {label: "Header Heading", name: "header_h1", widget: "string"}
+              - {label: "Header Paragraph", name: "header_p", widget: "string"}
+              - {label: "Second Heading", name: "main_h1", widget: "string"}
+              - {label: "Second Paragraph", name: "main_p", widget: "string"}
+              - {label: "Box One small Upper Text", name: "box_1_small_span", widget: "string"}
+              - {label: "Box One Heading", name: "box_1_h1", widget: "string"}
+              - {label: "Box One Paragraph", name: "box_1_p", widget: "string"}
+              - {label: "Box Two small Upper Text", name: "box_2_small_span", widget: "string"}
+              - {label: "Box Two Heading", name: "box_2_h1", widget: "string"}
+              - {label: "Box Two Paragraph", name: "box_2_p", widget: "string"}
+              - {label: "Box Three small Upper Text", name: "box_3_small_span", widget: "string"}
+              - {label: "Box Three Heading", name: "box_3_h1", widget: "string"}
+              - {label: "Box Three Paragraph", name: "box_3_p", widget: "string"}
+              - {label: "Box Four small Upper Text", name: "box_4_small_span", widget: "string"}
+              - {label: "Box Four Heading", name: "box_4_h1", widget: "string"}
+              - {label: "Box Four Paragraph", name: "box_4_p", widget: "string"}
+              - {label: "Third Heading", name: "sub_heading", widget: "string"}
+              - {label: "Box One Title", name: "sub_h1_1", widget: "string"}
+              - {label: "Box One Subtext", name: "sub_p_1", widget: "string"}
+              - {label: "Box Two Title", name: "sub_h1_2", widget: "string"}
+              - {label: "Box Two Subtext", name: "sub_p_2", widget: "string"}              
+              - {label: "Box Three Title", name: "sub_h1_3", widget: "string"}
+              - {label: "Box Three Subtext", name: "sub_p_3", widget: "string"}              
+              - {label: "Box Four Title", name: "sub_h1_4", widget: "string"}
+              - {label: "Box Four Subtext", name: "sub_p_4", widget: "string"}
+
         # FAQ Page
       - label: "FAQ Page"
         name: "faq"

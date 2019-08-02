@@ -8,10 +8,115 @@ layout: default
 	<div class="container">
 		<div class="faq-holder services-holder">
 			<div class="faq-text services-text">
-				<h1> GET REAL RESULTS </h1>
-				<p>We combine real-world experience with a passion for results. Work with us to create and execute a holistic offshore Plan. </p>
+				<h1> {{site.data.services.serv.header_h1}} </h1>
+				<p> {{site.data.services.serv.header_p}} </p>
 			</div>
 		</div>
 	</div>
  <div class="overlay"></div>
 </header>
+
+<section class="services">
+	<div class="container">
+		<div class="main-heading">
+			<h1> {{site.data.services.serv.main_h1}} </h1>
+			<p> {{site.data.services.serv.main_p}} </p>
+		</div>
+	</div>
+</section>
+
+<section class="services-row">
+	<div class="box-first">
+		<div class="container">
+			<div class="container-box">
+				<span> {{site.data.services.serv.box_1_small_span}} </span>
+				<h1> {{site.data.services.serv.box_1_h1}} </h1>
+				<p> {{ site.data.services.serv.box_1_p }} </p>
+				<button><a href="#">Learn More</a></button>
+			</div>
+		</div>
+	</div>
+	<div class="img">
+		<div style="background: url('assets/img/services/02.jpg');" class="img-holder"></div>
+	</div>
+</section>
+<section class="services-row">
+	<div class="img">
+		<div  style="background: url('assets/img/services/04.jpg');" class="img-holder"></div>
+	</div>
+	<div class="box-first">
+		<div class="container">
+			<div class="container-box">
+				<span> {{site.data.services.serv.box_2_small_span}} </span>
+				<h1> {{site.data.services.serv.box_2_h1}} </h1>
+				<p> {{ site.data.services.serv.box_2_p }} </p>
+				<button><a href="#">Learn More</a></button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="services-row">
+	<div class="box-first">
+		<div class="container">
+			<div class="container-box">
+				<span> {{site.data.services.serv.box_3_small_span}} </span>
+				<h1> {{site.data.services.serv.box_3_h1}} </h1>
+				<p> {{ site.data.services.serv.box_3_p }} </p>
+				<button><a href="#">Learn More</a></button>
+			</div>
+		</div>
+	</div>
+	<div class="img">
+		<div  style="background: url('assets/img/services/06.jpg');" class="img-holder"></div>
+	</div>
+</section>
+<section class="services-row last-row">
+	<div class="img">
+		<div  style="background: url('assets/img/services/03.jpg');" class="img-holder"></div>
+	</div>
+	<div class="box-first">
+		<div class="container">
+			<div class="container-box">
+				<span> {{site.data.services.serv.box_4_small_span}} </span>
+				<h1> {{site.data.services.serv.box_4_h1}} </h1>
+				<p> {{ site.data.services.serv.box_4_p }} </p>
+				<button><a href="#">Learn More</a></button>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="services-2">
+	<div class="box-container-2">
+		<h1> {{site.data.services.serv.sub_heading}} </h1>
+	</div>
+	<div class="conxtainer">
+		<div class="services-box-holder">
+			<div class="services-item">
+				<i class="fas fa-search-dollar"></i>
+				<h2>{{site.data.services.serv.sub_h1_1}}</h2>
+				<p>{{site.data.services.serv.sub_p_1}}</p>
+				<a href="#">Read More</a>
+			</div>			
+			<div class="services-item">
+				<i class="fas fa-shopping-cart"></i>
+				<h2>{{site.data.services.serv.sub_h1_2}}</h2>
+				<p>{{site.data.services.serv.sub_p_2}}</p>
+				<a href="#">Read More</a>
+			</div>			
+			<div class="services-item">
+				<i class="fab fa-youtube"></i>
+				<h2>{{site.data.services.serv.sub_h1_3}}</h2>
+				<p>{{site.data.services.serv.sub_p_3}}</p>
+				<a href="#">Read More</a>
+			</div>			
+			<div class="services-item">
+				<i class="fas fa-rss"></i>
+				<h2>{{site.data.services.serv.sub_h1_4}}</h2>
+				<p>{{site.data.services.serv.sub_p_4}}</p>
+				<a href="#">Read More</a>
+			</div>			
+		</div>
+	</div>
+</section>
+{% include footer.html %}
