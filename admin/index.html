@@ -12,17 +12,33 @@
   <script src="https://cdn.jsdelivr.net/npm/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
 <script>
-var PostPreview = createClass({
-  render: function() {
-    var entry = this.props.entry;
-    return h('div', {},
-      h('h1', {}, entry.getIn(['data', 'title'])),
-      h('div', {"className": "text"}, this.props.widgetFor('body'))
+CMS.registerEditorComponent({
+  // Internal id of the component
+  id: "youtube",
+  // Visible label
+  label: "Youtube",
+  // Fields the user need to fill out when adding an instance of the component
+  fields: [{name: 'id', label: 'Youtube Video ID', widget: 'string'}],
+  // Pattern to identify a block as being an instance of this component
+  pattern: /^<div class="box">(.*)<\/div>/,
+  // Function to extract data elements from the regexp match
+  fromBlock: function(match) {
+    return {
+      id: match[1]
+    };
+  },
+  // Function to create a text block from an instance of this component
+  toBlock: function(obj) {
+    return `<div class="box"><h1>${obj.id}</h1>"</div>`;
+  },
+  // Preview output for this component. Can either be a string or a React component
+  // (component gives better render performance)
+  toPreview: function(obj) {
+    return (
+      `<div class="box"><h1>${obj.id}</h1></div>`
     );
   }
 });
-
-CMS.registerPreviewTemplate("Policy Term", PostPreview);
 
 </script>
 </body>
