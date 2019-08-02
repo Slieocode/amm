@@ -50,6 +50,36 @@ collections:
               - {label: "Header Heading", name: "policy_h1", widget: "string"}
               - {label: "Header Paragraph", name: "policy_p1", widget: "string"}
               - {label: "Section Content", name: "content", widget: "markdown"}
+
+      # Policy Me page
+      - label: "Recommendations Page"
+        name: "policy"
+        file: "_data/rec.yml"
+        fields:
+          - label: "Recommendations landing page"
+            name: "rec"
+            widget: "object"
+            fields:
+              - {label: "Header Heading", name: "header_h1", widget: "string"}
+              - {label: "Header Paragraph", name: "header_p", widget: "string"}
+              - {label: "Second Heading", name: "main_h1", widget: "string"}
+              - {label: "Second Paragraph", name: "main_p", widget: "string"}
+              # section one
+              - {label: "Section One Heading", name: "rec_1_h1", widget: "string"}
+              - {label: "Item One Anchor Text ", name: "rec_1_item_1_a", widget: "string"}
+              - {label: "Item One Link URL", name: "rec_1_item_1_link", widget: "string"}
+              - {label: "Item One Paragraph", name: "rec_1_item_1_p", widget: "string"}
+              - {label: "Item Two Anchor Text ", name: "rec_1_item_2_a", widget: "string"}
+              - {label: "Item Two Link URL", name: "rec_1_item_2_link", widget: "string"}
+              - {label: "Item Two Paragraph", name: "rec_1_item_2_p", widget: "string"}
+              - {label: "Item Three Anchor Text ", name: "rec_1_item_3_a", widget: "string"}
+              - {label: "Item Three Link URL", name: "rec_1_item_3_link", widget: "string"}
+              - {label: "Item Three Paragraph", name: "rec_1_item_3_p", widget: "string"}
+              - {label: "Item Four Anchor Text ", name: "rec_1_item_4_a", widget: "string"}
+              - {label: "Item Four Link URL", name: "rec_1_item_4_link", widget: "string"}
+              - {label: "Item Four Paragraph", name: "rec_1_item_4_p", widget: "string"}
+              # section two
+
       # Services  page
       - label: "Services Page"
         name: "services"
