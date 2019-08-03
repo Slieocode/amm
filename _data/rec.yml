@@ -1,5 +1,5 @@
 rec:
-  content: "\n\n<div class=\"rec-holder\">\n    \t\t\t<h1><span class=\"underline\">section babe</span></h1>\n    \t\t\t<ol>\n\t\t\t\t  <li>\n\t\t\t\t\t <a href=\"#\">linkme</a>\n\t\t\t\t\t <p>skjhdjkhfdshgjkhfdskjghsdkjhf</p>\n\t\t\t\t  </li>\n    \t\t\t</ol>\n    \t\t</div>\n\n\n\t\t\t<ol>\n\t\t\t  <li>\n\t\t\t\t <a href=\"#\">HEYY</a>\n\t\t\t\t <p>qsdqsdfqsdfqf</p>\n\t\t\t  </li>\n\t\t\t</ol>"
+  content: recs
   header_h1: Our Recommendations
   header_p: >-
     Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
