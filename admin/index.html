@@ -36,9 +36,7 @@ CMS.registerEditorComponent({
   toBlock: function(obj) {
     return `<div class="rec-holder">
     			<h1>${obj.id}</h1>
-    			<ol>
-    			<li>${obj.p}</li>
-    			</ol>
+				<p>${obj.p}</p>
     			</div>`;
   },
   // Preview output for this component. Can either be a string or a React component
@@ -48,9 +46,7 @@ CMS.registerEditorComponent({
       `
 			<div class="rec-holder">
     			<h1>${obj.id}</h1>
-    			<ol>
-    			<li>${obj.p}</li>
-    			</ol>
+				<p>${obj.p}</p>
     			</div>
       `
     );
