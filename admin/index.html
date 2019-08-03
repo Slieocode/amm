@@ -47,13 +47,17 @@ CMS.registerEditorComponent({
 // Rec Component
 CMS.registerEditorComponent({
   // Internal id of the component
-  id: "rec",
+  id: "SimpleListWidget",
   // Visible label
-  label: "Recommendation Section",
+  label: "SimpleListWidget",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
-  			{name: 'id', label:'Add Links', allow_add: true,  widget:'list',  field: { label:'Link URL', name:'url' , widget:'string' } }
-  		],
+      {name: 'link', label: 'Add Link', widget: 'list', 
+      fields:   [ 
+      			  {name: 'url', label: 'Add URL', widget: 'string'}
+      			]
+  			}
+  ],
   // Pattern to identify a block as being an instance of this component
   pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li>(.*)<\/li><\/ol><\/div>/,
   // Function to extract data elements from the regexp match
