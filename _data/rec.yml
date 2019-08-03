@@ -1,6 +1,11 @@
 rec:
+  content: "<div class=\"rec-holder\">\n    \t\t\t<h1><span class=\"underline\">Money Making</span></h1>\n    \t\t\t<ol>\n\t\t\t\t  <li>\n\t\t\t\t\t <a href=\"#\">Betfair</a>\n\t\t\t\t\t <p>lorem text here around there or anywhere.</p>\n\t\t\t\t  </li>\n    \t\t\t</ol>\n    \t\t</div>\n\n\n\t\t\t<ol>\n\t\t\t  <li>\n\t\t\t\t <a href=\"#\">face</a>\n\t\t\t\t <p>sqdqdspqpsdqsdppdfsqopqsdd</p>\n\t\t\t  </li>\n\t\t\t</ol>"
   header_h1: Our Recommendations
-  header_p: Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing Apps.
-  main_h1: "Please Note That:"
-  main_p: This is bases purely off data, quanatitve analyis and facts and you should do your own reserach and consult a professional before making any finanical deciosn for yourself.
-  content: 'recs'
+  header_p: >-
+    Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
+    Apps.
+  main_h1: 'Please Note That:'
+  main_p: >-
+    This is bases purely off data, quanatitve analyis and facts and you should
+    do your own reserach and consult a professional before making any finanical
+    deciosn for yourself.
