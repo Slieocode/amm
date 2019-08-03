@@ -82,6 +82,7 @@ CMS.registerEditorComponent({
   // Internal id of the component
   id: "linko",
   texto:"link",
+  desc:'desc'
 
   // Visible label
   label: "Add Link",
@@ -89,24 +90,26 @@ CMS.registerEditorComponent({
   fields: [
   			{name: 'id', label: 'Link URL', widget: 'string'},
   			{name: 'texto', label: 'Text', widget: 'string'},
+  			{name: 'desc', label: 'Description', widget: 'string'}
   		],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^<li><a href="(.*)">(.*)<\/a><\/li>/,
+  pattern: /^<li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li>/,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
       id: match[1],
       texto: match[2],
+      desc: match[3]
     };
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<li><a href="${obj.id}">${obj.texto}<\/a><\/li>`;
+    return `<li><a href="${obj.id}">${obj.texto}<\/a><p>${obj.desc}<\/p><\/li>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<li><a href="${obj.id}">${obj.texto}<\/a><\/li>`);
+    return (`<li><a href="${obj.id}">${obj.texto}<\/a><p>${obj.desc}<\/p><\/li>`);
   }	
 });
 
