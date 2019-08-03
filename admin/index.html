@@ -55,7 +55,7 @@ CMS.registerEditorComponent({
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
   			{name: 'listed', label:'Add Links', allow_add: true,  widget:'list', 
-  			fields: [{ label:'Link Text', name:'links' , widget:'string' }, { label:'Link URL', name:'url' , widget:'string' } ] }
+  			fields: [{ label:'Link Text', name:'aName' , widget:'string' }, { label:'Link URL', name:'url' , widget:'string' } ] }
   		],
   // Pattern to identify a block as being an instance of this component
   pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li>(.*)<\/li><\/ol><\/div>/,
