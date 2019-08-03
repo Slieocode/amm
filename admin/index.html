@@ -54,7 +54,7 @@ CMS.registerEditorComponent({
   p:'paragraph',
 
   // Visible label
-  label: "New Rec",
+  label: "Recommendation Section",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
@@ -95,6 +95,55 @@ CMS.registerEditorComponent({
 				  </li>
     			</ol>
     		</div>`
+    );
+  }	
+});
+// Rec list Component
+CMS.registerEditorComponent({
+  // Internal id of the component
+  url:"link",
+  text:'text',
+  p:'paragraph',
+
+  // Visible label
+  label: "Recommendation Link",
+  // Fields the user need to fill out when adding an instance of the component
+  fields: [
+  			{name: 'text', label: 'Link Title', widget: 'string'},
+  			{name: 'url', label: 'Link URL', widget: 'string'},
+  			{name: 'p', label: 'Recommendation Description', widget: 'string'}
+  		],
+  // Pattern to identify a block as being an instance of this component
+  pattern: /^<ol>(.*)<\/ol>/,
+  // Function to extract data elements from the regexp match
+  fromBlock: function(match) {
+    return {
+      id: match[1]
+    };
+  },
+  // Function to create a text block from an instance of this component
+  toBlock: function(obj) {
+    return `
+			<ol>
+			  <li>
+				 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
+				 <p>${obj.p}</p>
+			  </li>
+			</ol>
+			`;
+  },
+  // Preview output for this component. Can either be a string or a React component
+  // (component gives better render performance)
+  toPreview: function(obj) {
+    return (
+      		`
+			<ol>
+			  <li>
+				 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
+				 <p>${obj.p}</p>
+			  </li>
+			</ol>
+			`
     );
   }	
 });
