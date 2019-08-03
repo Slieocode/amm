@@ -52,7 +52,7 @@ CMS.registerEditorComponent({
   label: "SimpleListWidget",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
-      {name: 'id', label: 'Add Link', widget: 'list', 
+      {name: 'id', label: 'Add Link', widget: 'object', 
       fields:   [ 
       			  {name: 'url', label: 'Add URL', widget: 'string'}
       			]
@@ -69,12 +69,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><ol><li>${obj.id}</li></ol></div>`;
+    return `<div class="rec-holder"><ol><li>${obj.id.url}</li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><ol><li>${obj.id}</li></ol></div>`);
+    return (`<div class="rec-holder"><ol><li>${obj.id.url}</li></ol></div>`);
   }	
 });
 
