@@ -64,24 +64,7 @@ collections:
               - {label: "Header Paragraph", name: "header_p", widget: "string"}
               - {label: "Second Heading", name: "main_h1", widget: "string"}
               - {label: "Second Paragraph", name: "main_p", widget: "string"}
-              # section one
-          - label: "Money Making"
-            name: "first"
-            widget: "object"
-            fields:    
-              - {label: "Section Heading", name: "rec_1_h1", widget: "string"}
-              - {label: "Item One Anchor Text ", name: "rec_1_item_1_a", widget: "string"}
-              - {label: "Item One Link URL", name: "rec_1_item_1_link", widget: "string"}
-              - {label: "Item One Paragraph", name: "rec_1_item_1_p", widget: "string"}
-              - {label: "Item Two Anchor Text ", name: "rec_1_item_2_a", widget: "string"}
-              - {label: "Item Two Link URL", name: "rec_1_item_2_link", widget: "string"}
-              - {label: "Item Two Paragraph", name: "rec_1_item_2_p", widget: "string"}
-              - {label: "Item Three Anchor Text ", name: "rec_1_item_3_a", widget: "string"}
-              - {label: "Item Three Link URL", name: "rec_1_item_3_link", widget: "string"}
-              - {label: "Item Three Paragraph", name: "rec_1_item_3_p", widget: "string"}
-              - {label: "Item Four Anchor Text ", name: "rec_1_item_4_a", widget: "string"}
-              - {label: "Item Four Link URL", name: "rec_1_item_4_link", widget: "string"}
-              - {label: "Item Four Paragraph", name: "rec_1_item_4_p", widget: "string"}
+              - {label: "Section Heading", name: "content", widget: "markdown"}
               # section two
 
       # Services  page
