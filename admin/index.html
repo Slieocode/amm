@@ -48,13 +48,13 @@ CMS.registerEditorComponent({
 CMS.registerEditorComponent({
   // Internal id of the component
   id: "rec",
-  list:"links",
+  listed:"links",
   // Visible label
   label: "Recommendation Section",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
-  			{name: 'list', label:'Add Links', allow_add: true,  widget:'list', field:{ label:'Link Text', name:'link' , widget:'string' } }
+  			{name: 'listed', label:'Add Links', allow_add: true,  widget:'list', field:{ label:'Link Text', name:'links' , widget:'string' } }
   		],
   // Pattern to identify a block as being an instance of this component
   pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li><\/ol><\/div>/,
@@ -62,17 +62,17 @@ CMS.registerEditorComponent({
   fromBlock: function(match) {
     return {
       id: match[1],
-      list: match[2],
+      listed: match[3],
     };
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list}">${obj.list}</a><p>${obj.list}</p></li></ol></div>`;
+    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.listed.links}">${obj.listed.links}</a><p>${obj.listed.links}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list}">${obj.list}</a><p>${obj.list}</p></li></ol></div>`);
+    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.listed.links}">${obj.listed.links}</a><p>${obj.listed.links}</p></li></ol></div>`);
   }	
 });
 
