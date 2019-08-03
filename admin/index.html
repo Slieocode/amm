@@ -57,7 +57,7 @@ CMS.registerEditorComponent({
   // Fields the user need to fill out when adding an instance of the component
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
-  			{name: 'text', label: 'Link Title', widget: 'string'},
+  			{name: 'text', label: 'Link Title', widget: 'list', field: {name:'listed', label:'add title', widget: 'string'} },
   			{name: 'url', label: 'Link URL', widget: 'string'},
   			{name: 'p', label: 'Recommendation Description', widget: 'string'}
   		],
@@ -74,12 +74,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
+    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text.listed}</a><p>${obj.p}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`);
+    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text.listed}</a><p>${obj.p}</p></li></ol></div>`);
   }	
 });
 
