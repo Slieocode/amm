@@ -49,6 +49,8 @@ CMS.registerEditorComponent({
   // Internal id of the component
   id: "rec",
   listed:"links",
+  linka:'linka',
+  p:'p'
   // Visible label
   label: "Recommendation Section",
   // Fields the user need to fill out when adding an instance of the component
@@ -62,7 +64,9 @@ CMS.registerEditorComponent({
   fromBlock: function(match) {
     return {
       id: match[1],
-      listed: match[3],
+      listed:match[2],
+      linka: match[3],
+      p: match[4]
     };
   },
   // Function to create a text block from an instance of this component
