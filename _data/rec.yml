@@ -1,8 +1,6 @@
 rec:
-  body: >-
-    <div class="rec-holder"><h1>ooooooo</h1><a
-    href="#">pppppp</a><p>ppppp</p></div>
-
+  body: |-
+    <div class="rec-holder"><h1>ooooooo</h1>fffffff[\#](#)</div>
 
     [iiii](o)
   header_h1: Our Recommendations
