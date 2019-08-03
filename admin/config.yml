@@ -53,7 +53,7 @@ collections:
 
       # Policy Me page
       - label: "Recommendations Page"
-        name: "policy"
+        name: "rec"
         file: "_data/rec.yml"
         fields:
           - label: "Recommendations landing page"
