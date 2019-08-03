@@ -57,7 +57,8 @@ CMS.registerEditorComponent({
   // Fields the user need to fill out when adding an instance of the component
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
-  			{name: 'text', label: 'Link Title', widget: 'list', types: {name:'listed', label:'add title', widget: 'string'} },
+  			{name: 'text', label: 'Link Title', widget: 'list', types: [{name:'listed', label:'add title', widget: 'object', 
+  			fields: { name:'linka', label:'im link', widget:'string' }} }],
   			{name: 'url', label: 'Link URL', widget: 'string'},
   			{name: 'p', label: 'Recommendation Description', widget: 'string'}
   		],
