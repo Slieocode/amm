@@ -62,7 +62,7 @@ CMS.registerEditorComponent({
   			{name: 'p', label: 'Recommendation Description', widget: 'string'}
   		],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^<div class="rec-holder"><h1>(.*)<\/<h1><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/div>/,
+  pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/div>/,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
@@ -79,9 +79,7 @@ CMS.registerEditorComponent({
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (
-      		`<div class="rec-holder"><h1>${obj.id}</h1><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></div>`
-    );
+    return (`<div class="rec-holder"><h1>${obj.id}</h1><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></div>`);
   }	
 });
 
