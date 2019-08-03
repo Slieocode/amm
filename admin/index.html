@@ -57,14 +57,12 @@ CMS.registerEditorComponent({
   			{name: 'listed', label:'Add Links', allow_add: true,  widget:'list', field: { label:'Link Text', name:'links' , widget:'string' } }
   		],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li><\/ol><\/div>/,
+  pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li>(.*)<\/li><\/ol><\/div>/,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
       id: match[1],
       listed:match[2],
-      linka: match[3],
-      p: match[4]
     };
   },
   // Function to create a text block from an instance of this component
