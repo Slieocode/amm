@@ -48,18 +48,20 @@ CMS.registerEditorComponent({
 CMS.registerEditorComponent({
   // Internal id of the component
   id: "rec",
-  url:"link",
-  text:'text',
-  p:'paragraph',
+  list:"links",
 
   // Visible label
   label: "Recommendation Section",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
   			{name: 'id', label: 'Recommendation Main Heading', widget: 'string'},
-  			{name: 'text', label: 'Link Title', widget: 'string'},
-  			{name: 'url', label: 'Link URL', widget: 'string'},
-  			{name: 'p', label: 'Recommendation Description', widget: 'string'}
+  			{
+  				name: 'links', 
+  				label:'Add Links', 
+  				allow_add: true,  
+  				widget:'list',
+  				field:{ label:'Link Text', name:'link' , widget:'string' }
+  			 }
   		],
   // Pattern to identify a block as being an instance of this component
   pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><ol><li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li><\/ol><\/div>/,
@@ -74,53 +76,53 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
+    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.link}">${obj.list.link}</a><p>${obj.list.link}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`);
+    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.link}">${obj.list.link}</a><p>${obj.list.link}</p></li></ol></div>`);
   }	
 });
 
 
-// Rec Single list Component
-CMS.registerEditorComponent({
-  // Internal id of the component
-  url:"link",
-  text:'text',
-  p:'paragraph',
+// // Rec Single list Component
+// CMS.registerEditorComponent({
+//   // Internal id of the component
+//   url:"link",
+//   text:'text',
+//   p:'paragraph',
 
-  // Visible label
-  label: "Recommendation Link",
-  // Fields the user need to fill out when adding an instance of the component
-  fields: [
-  			{name: 'text', label: 'Link Title', widget: 'string'},
-  			{name: 'url', label: 'Link URL', widget: 'string'},
-  			{name: 'p', label: 'Recommendation Description', widget: 'string'}
-  		],
-  // Pattern to identify a block as being an instance of this component
-  pattern: /^<div><ol><li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li><\/ol><\/div>/,
-  // Function to extract data elements from the regexp match
-  fromBlock: function(match) {
-    return {
-      url: match[1],
-      text: match[2],
-      p: match[3]
-    };
-  },
-  // Function to create a text block from an instance of this component
-  toBlock: function(obj) {
-    return `<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
-  },
-  // Preview output for this component. Can either be a string or a React component
-  // (component gives better render performance)
-  toPreview: function(obj) {
-    return (
-      		`<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`
-    );
-  }	
-});
+//   // Visible label
+//   label: "Recommendation Link",
+//   // Fields the user need to fill out when adding an instance of the component
+//   fields: [
+//   			{name: 'text', label: 'Link Title', widget: 'string'},
+//   			{name: 'url', label: 'Link URL', widget: 'string'},
+//   			{name: 'p', label: 'Recommendation Description', widget: 'string'}
+//   		],
+//   // Pattern to identify a block as being an instance of this component
+//   pattern: /^<div><ol><li><a href="(.*)">(.*)<\/a><p>(.*)<\/p><\/li><\/ol><\/div>/,
+//   // Function to extract data elements from the regexp match
+//   fromBlock: function(match) {
+//     return {
+//       url: match[1],
+//       text: match[2],
+//       p: match[3]
+//     };
+//   },
+//   // Function to create a text block from an instance of this component
+//   toBlock: function(obj) {
+//     return `<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
+//   },
+//   // Preview output for this component. Can either be a string or a React component
+//   // (component gives better render performance)
+//   toPreview: function(obj) {
+//     return (
+//       		`<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`
+//     );
+//   }	
+// });
 
 </script>
 </body>
