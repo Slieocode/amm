@@ -1,7 +1,13 @@
 rec:
+  content: >-
+    <div class="rec-holder"><h1>faces</h1><a
+    href="qfsqsf">qff</a><p>undefined</p></div>
   header_h1: Our Recommendations
-  header_p: Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing Apps.
-  main_h1: "Please Note That:"
-  main_p: This is bases purely off data, quanatitve analyis and facts and you should do your own reserach and consult a professional before making any finanical deciosn for yourself.
-  content: 'recs'
-# check if policy.yml changes or not (it probably does)
+  header_p: >-
+    Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
+    Apps.
+  main_h1: 'Please Note That:'
+  main_p: >-
+    This is bases purely off data, quanatitve analyis and facts and you should
+    do your own reserach and consult a professional before making any finanical
+    deciosn for yourself.
