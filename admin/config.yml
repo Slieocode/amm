@@ -38,7 +38,7 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Blurb", name: "blurp", widget: "string"}
               - {label: "my Story", name: "myStory", widget: "markdown"}
-      # Policy Me page
+      # Policy  page
       - label: "Terms And Policies Page"
         name: "policy"
         file: "_data/policy.yml"
@@ -51,7 +51,7 @@ collections:
               - {label: "Header Paragraph", name: "policy_p1", widget: "string"}
               - {label: "Section Content", name: "content", widget: "markdown"}
 
-      # Policy Me page
+      # Recommendations page
       - label: "Recommendations Page"
         name: "rec"
         file: "_data/rec.yml"
@@ -65,7 +65,11 @@ collections:
               - {label: "Second Heading", name: "main_h1", widget: "string"}
               - {label: "Second Paragraph", name: "main_p", widget: "string"}
               # section one
-              - {label: "Section One Heading", name: "rec_1_h1", widget: "string"}
+          - label: "Money Making"
+            name: "first"
+            widget: "object"
+            fields:    
+              - {label: "Section Heading", name: "rec_1_h1", widget: "string"}
               - {label: "Item One Anchor Text ", name: "rec_1_item_1_a", widget: "string"}
               - {label: "Item One Link URL", name: "rec_1_item_1_link", widget: "string"}
               - {label: "Item One Paragraph", name: "rec_1_item_1_p", widget: "string"}
