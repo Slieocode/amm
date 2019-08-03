@@ -76,12 +76,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.link}">${obj.list.link}</a><p>${obj.list.link}</p></li></ol></div>`;
+    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.list.link}">${obj.list.list.link}</a><p>${obj.list.list.link}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.link}">${obj.list.link}</a><p>${obj.list.link}</p></li></ol></div>`);
+    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li><a href="${obj.list.list.link}">${obj.list.list.link}</a><p>${obj.list.list.link}</p></li></ol></div>`);
   }	
 });
 
