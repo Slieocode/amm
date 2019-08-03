@@ -9,7 +9,6 @@ public_folder: "assets/img/blogs/uploads"
 collections:
   - label: "Pages Settings"
     name: "pages"
-    frontmatter_delimiter: format
     files:
       - label: "About Page"
         name: "site"
