@@ -52,7 +52,7 @@ CMS.registerEditorComponent({
   label: "Recommendation Section",
   // Fields the user need to fill out when adding an instance of the component
   fields: [
-  			{name: 'listed', label:'Add Links', allow_add: true,  widget:'list', 
+  			{name: 'id', label:'Add Links', allow_add: true,  widget:'list', 
   			fields: [{ label:'Link Text', name:'aName' , widget:'string' }, { label:'Link URL', name:'url' , widget:'string' } ] }
   		],
   // Pattern to identify a block as being an instance of this component
@@ -67,12 +67,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder"><h1>${obj.id}</h1><ol><li>${obj.listed}</li></ol></div>`;
+    return `<div class="rec-holder"><h1>${obj.id.url}</h1><ol><li>${obj.id.aName}</li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (`<div class="rec-holder"><h1>${obj.id}</h1><ol><li>${obj.listed}</li></ol></div>`);
+    return (`<div class="rec-holder"><h1>${obj.id.url}</h1><ol><li>${obj.id.aName}</li></ol></div>`);
   }	
 });
 
