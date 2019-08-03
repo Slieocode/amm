@@ -34,13 +34,19 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="box"><span>${obj.id}</span><p>${obj.p}</p></div>`;
+    return `<div class="box">
+    	<h1>${obj.id}</h1>
+    		<p>${obj.p}</p>
+   		 </div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
     return (
-      `<div class="box"><span>${obj.id}</span><p>${obj.p}</p></div>`
+      `<div class="box">
+      	<h1>${obj.id}</h1>
+    		  <p>${obj.p}</p>
+   		   </div>`
     );
   }	
 });
@@ -72,30 +78,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `<div class="rec-holder">
-    			<h1><span class="underline">${obj.id}</span></h1>
-    			<ol>
-				  <li>
-					 <a href="${obj.url}">${obj.text}</a>
-					 <p>${obj.p}</p>
-				  </li>
-    			</ol>
-    		</div>`;
+    return `<div class="rec-holder"><h1><span class="underline">${obj.id}</span></h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (
-      		`<div class="rec-holder">
-    			<h1>${obj.id}</h1>
-    			<ol>
-				  <li>
-					 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
-					 <p>${obj.paragraph}</p>
-				  </li>
-    			</ol>
-    		</div>`
-    );
+    return (`<div class="rec-holder"><h1><span class="underline">${obj.id}</span></h1><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`);
   }	
 });
 // Rec list Component
@@ -123,32 +111,12 @@ CMS.registerEditorComponent({
   },
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
-    return `
-    		<div>
-				<ol>
-				  <li>
-					 <a href="${obj.url}">${obj.text}</a>
-					 <p>${obj.p}</p>
-				  </li>
-				</ol>
-    		</div>
-			`;
+    return `<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`;
   },
   // Preview output for this component. Can either be a string or a React component
   // (component gives better render performance)
   toPreview: function(obj) {
-    return (
-      		`
-			<div>
-				<ol>
-				  <li>
-					 <a href="${obj.url}">${obj.text}</a>
-					 <p>${obj.p}</p>
-				  </li>
-				</ol>
-			</div>
-			`
-    );
+    return (`<div><ol><li><a href="${obj.url}">${obj.text}</a><p>${obj.p}</p></li></ol></div>`);
   }	
 });
 
