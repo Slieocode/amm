@@ -25,7 +25,7 @@ CMS.registerEditorComponent({
   			{name: 'p', label: 'Policy Description', widget: 'string'}
   		],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^<div class="rec-holder"><h1>(.*)<\/h1> <p>(.*)<\/p> <\/div>/,
+  pattern: /^<div class="rec-holder"><h1>(.*)<\/h1><p>(.*)<\/p><\/div>/,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
