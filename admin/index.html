@@ -29,7 +29,8 @@ CMS.registerEditorComponent({
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
-      id: match[1]
+      id: match[1],
+      p: match[2]
     };
   },
   // Function to create a text block from an instance of this component
