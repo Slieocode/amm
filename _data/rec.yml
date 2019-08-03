@@ -1,8 +1,5 @@
 rec:
-  body: |-
-    <div class="rec-holder"><h1>ooooooo</h1>fffffff[\#](#)</div>
-
-    [iiii](o)
+  body: '<div class="rec-holder"><h1>fff</h1>[ffff](ff)</div>'
   header_h1: Our Recommendations
   header_p: >-
     Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
