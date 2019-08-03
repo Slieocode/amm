@@ -1,5 +1,13 @@
 rec:
-  body: '<div class="rec-holder"><h1>fff</h1>[ffff](ff)</div>'
+  body: >-
+    <div class="rec-holder"><h1>ooo</h1><ol><li><a href="/faq">Dambo</a></li>
+
+
+    <li><a href="shit dawg">Dam</a></li></ol></div>
+
+
+    <div class="rec-holder"><h1>face</h1><ol><li><a
+    href="/services">betfair</a></li></ol></div>
   header_h1: Our Recommendations
   header_p: >-
     Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
