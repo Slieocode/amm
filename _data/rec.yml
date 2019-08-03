@@ -1,7 +1,11 @@
 rec:
+  content: "<div class=\"rec-holder\">\n    \t\t\t<h1><span class=\"underline\">qd</span></h1>\n\t\t\t\t\t <a href=\"qsd\">dsq</a>\n\t\t\t\t\t <p>sqd</p>\n    \t\t</div>\n\nrecs"
   header_h1: Our Recommendations
-  header_p: Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing Apps.
-  main_h1: "Please Note That:"
-  main_p: This is bases purely off data, quanatitve analyis and facts and you should do your own reserach and consult a professional before making any finanical deciosn for yourself.
-  content: 'recs'
-# check if policy.yml changes or not (it probably does)
+  header_p: >-
+    Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
+    Apps.
+  main_h1: 'Please Note That:'
+  main_p: >-
+    This is bases purely off data, quanatitve analyis and facts and you should
+    do your own reserach and consult a professional before making any finanical
+    deciosn for yourself.
