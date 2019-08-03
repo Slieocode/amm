@@ -1,8 +1,6 @@
 policy:
-  content: >2-
-     
-
-    <div class="box"><span>sqd</span><span>qds</span></div>
+  content: >-
+    <span class="box"><span>qds</span><span>qds</span></span>
 
 
     <div class="box"> <h1>Affiliate discloser</h1>
