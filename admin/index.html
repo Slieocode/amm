@@ -114,7 +114,7 @@ CMS.registerEditorComponent({
   			{name: 'p', label: 'Recommendation Description', widget: 'string'}
   		],
   // Pattern to identify a block as being an instance of this component
-  pattern: /^<ol>(.*)<\/ol>/,
+  pattern: /^<div>(.*)<\/div>/,
   // Function to extract data elements from the regexp match
   fromBlock: function(match) {
     return {
@@ -124,12 +124,14 @@ CMS.registerEditorComponent({
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
     return `
-			<ol>
-			  <li>
-				 <a href="${obj.url}">${obj.text}</a>
-				 <p>${obj.p}</p>
-			  </li>
-			</ol>
+    		<div>
+				<ol>
+				  <li>
+					 <a href="${obj.url}">${obj.text}</a>
+					 <p>${obj.p}</p>
+				  </li>
+				</ol>
+    		</div>
 			`;
   },
   // Preview output for this component. Can either be a string or a React component
@@ -137,12 +139,14 @@ CMS.registerEditorComponent({
   toPreview: function(obj) {
     return (
       		`
-			<ol>
-			  <li>
-				 <a href="${obj.url}">${obj.text}</a>
-				 <p>${obj.p}</p>
-			  </li>
-			</ol>
+			<div>
+				<ol>
+				  <li>
+					 <a href="${obj.url}">${obj.text}</a>
+					 <p>${obj.p}</p>
+				  </li>
+				</ol>
+			</div>
 			`
     );
   }	
