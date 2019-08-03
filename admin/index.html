@@ -73,10 +73,10 @@ CMS.registerEditorComponent({
   // Function to create a text block from an instance of this component
   toBlock: function(obj) {
     return `<div class="rec-holder">
-    			<h1>${obj.id}</h1>
+    			<h1><span class="underline">${obj.id}</span></h1>
     			<ol>
 				  <li>
-					 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
+					 <a href="${obj.url}">${obj.text}</a>
 					 <p>${obj.p}</p>
 				  </li>
     			</ol>
@@ -126,7 +126,7 @@ CMS.registerEditorComponent({
     return `
 			<ol>
 			  <li>
-				 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
+				 <a href="${obj.url}">${obj.text}</a>
 				 <p>${obj.p}</p>
 			  </li>
 			</ol>
@@ -139,7 +139,7 @@ CMS.registerEditorComponent({
       		`
 			<ol>
 			  <li>
-				 <span class="underline"><a href="${obj.url}">${obj.text}</a></span>
+				 <a href="${obj.url}">${obj.text}</a>
 				 <p>${obj.p}</p>
 			  </li>
 			</ol>
