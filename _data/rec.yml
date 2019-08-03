@@ -1,12 +1,7 @@
 rec:
-  content: |-
-    <div class="rec-holder"><h1>ffff</h1>1. [qdsq](#)</div>
-
-    # ppp
-
-    1. [poô](/faq)
-    2. [uoiuio](/faq)
-    3. [uouio](/faq)
+  body: >-
+    <div class="rec-holder"><h1>ooooooo</h1><ol><li><a
+    href="#">pppppp</a><p>ppppp</p></li></ol></div>
   header_h1: Our Recommendations
   header_p: >-
     Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing

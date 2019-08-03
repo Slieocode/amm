@@ -64,7 +64,7 @@ collections:
               - {label: "Header Paragraph", name: "header_p", widget: "string"}
               - {label: "Second Heading", name: "main_h1", widget: "string"}
               - {label: "Second Paragraph", name: "main_p", widget: "string"}
-              - {label: "Section Heading", name: "content", widget: "markdown"}
+              - {label: "Section Heading", name: "body", widget: "markdown"}
               # section two
 
       # Services  page
