@@ -1,6 +1,9 @@
 policy:
   content: >-
-    <div class="box"><h1>qsdqsd</h1><p>qsdqd</p></div>
+    <div class="box"><h1><h1>qsdqsd</h1><p>qsdqd</p></h1><p>undefined</p></div>
+
+
+    <div class="box"><h1>qsd</h1><p>qsdqsd</p></div>
 
      <div class="box"> <h1>Affiliate discloser</h1>
     <p>All information is provided in faith that it is accurate and reliable.
