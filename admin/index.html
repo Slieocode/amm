@@ -80,7 +80,7 @@ CMS.registerEditorComponent({
   // (component gives better render performance)
   toPreview: function(obj) {
     return (
-      		`<div class="rec-holder"><h1>${obj.id}</h1><span class="underline"><a href="${obj.url}">${obj.text}</a></span><p>${obj.paragraph}</p></div>`
+      		`<div class="rec-holder"><h1>${obj.id}</h1><a href="${obj.url}">${obj.text}</a><p>${obj.paragraph}</p></div>`
     );
   }	
 });
