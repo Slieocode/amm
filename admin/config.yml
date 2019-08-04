@@ -203,6 +203,12 @@ collections:
               - {label: "Item five paragraph", name: "item_5_p", widget: "string"}
               - {label: "Item six Title", name: "item_6_title", widget: "string"}
               - {label: "Item six paragraph", name: "item_6_p", widget: "string"}
+              - {label: "Item Seven Title", name: "item_7_title", widget: "string"}
+              - {label: "Item Seven paragraph", name: "item_7_p", widget: "string"}
+              - {label: "Item Eight Title", name: "item_8_title", widget: "string"}
+              - {label: "Item Eight paragraph", name: "item_8_p", widget: "string"}
+              - {label: "Item Nine Title", name: "item_9_title", widget: "string"}
+              - {label: "Item Nine paragraph", name: "item_9_p", widget: "string"}
 
           - label: "Statistics Section"
             name: "stats"
