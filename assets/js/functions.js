@@ -24,6 +24,9 @@ $(document).ready(function(){
 				position:'fixed',
 				width:'100%',
 			})
+			$('.mark h2').css({
+				color:'#000',
+			})
 
 			$('.ul-nav a').addClass('link-color-switch')
 
@@ -47,14 +50,7 @@ $(document).ready(function(){
 	})
 
 	/* video Popup Handler  */
-	$(".js-video-button").modalVideo({
-		youtube:{
-			controls:0,
-			nocookie: true,
-			autoplay:1,
-			iv_load_policy:1
-		}
-	});
+$(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 
 	/* Menu Button Trigger */
 	const btn = document.getElementById("menu-toggle");
@@ -184,12 +180,44 @@ $(document).ready(function(){
                .slideUp()
       }
       
-      // show/hide the clicked accordion item
-      $this.closest('.js-accordion-item').toggleClass('active');
-      $this.next().stop().slideToggle(settings.speed);
-    }
-  }
-})();
+	      // show/hide the clicked accordion item
+	      $this.closest('.js-accordion-item').toggleClass('active');
+	      $this.next().stop().slideToggle(settings.speed);
+	    }
+	  }
+	})();
+  	accordion.init({ speed: 300, oneOpen: true });
 
-  accordion.init({ speed: 300, oneOpen: true });
+  /* book download button scroll down */
+	if($('.books-text').length){
+		$('.books-text button').on('click', function(){
+		    $('html,body').animate({
+		        scrollTop: $("#odometer").offset().top
+		    }, 'slow');
+		});
+	}
+
+	/* Removing Hover Effect */
+	function hasTouch() {
+	    return 'ontouchstart' in document.documentElement
+	           || navigator.maxTouchPoints > 0
+	           || navigator.msMaxTouchPoints > 0;
+		}
+
+	if (hasTouch()) { // remove all :hover stylesheets
+	    try { // prevent exception on browsers not supporting DOM styleSheets properly
+	        for (var si in document.styleSheets) {
+	            var styleSheet = document.styleSheets[si];
+	            if (!styleSheet.rules) continue;
+
+	            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+	                if (!styleSheet.rules[ri].selectorText) continue;
+
+	                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+	                    styleSheet.deleteRule(ri);
+	                }
+	            }
+	        }
+	    } catch (ex) {}
+	}
 });

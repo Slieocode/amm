@@ -1,0 +1,140 @@
+.books-header{
+	height: 530px;
+	background: url('../img/books/02.jpg') no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	.overlay{
+		background: rgba(0, 0, 0, 0.6);		
+	}
+	.books-holder{
+		display: flex;
+		margin-top:5%;
+		justify-content: left;
+	}
+	.books-text{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 57%;
+		h1{
+		    font-size: 3.5em;
+		}
+		p{
+		    font-size: 1.5em;
+		    margin:0;
+			a{color:skyblue;}
+		}
+		button{
+			width:200px;
+			padding:10px;
+			background:none;
+			font-size:1.2em;
+			font-weight: bold;
+			outline:none;
+			border:1px solid #FFF;
+			border-radius:20px;
+			color:#FFF;
+			margin-top:5%;
+			transition:.3s;
+			&:hover{
+				background:#FFF;
+				color:#000;
+				cursor:pointer;
+			}
+		}
+	}
+}
+
+.download{
+		text-align:center;	
+		h1{
+			font-size:2.6em;
+		}
+	.downloadCount{
+		text-align:center;
+		#odometer{
+			background:#FFF;
+		}
+		 .odometer{
+		     font-size: 100px;
+		     border: 0;
+		     border-radius: 0.25em;
+		     padding: 25px;
+		    
+		     .odometer-value{
+		         background: #000;
+		         -webkit-background-clip: text;
+		         -webkit-text-fill-color: transparent;
+		    }
+		}
+		.odometer.odometer-auto-theme{
+		  .odometer-digit{
+		    border-radius: 0;
+		    box-shadow: none;
+		    background: #FFF;
+		    font-size:1.3em;
+		    vertical-align:baseline;
+		    -webkit-box-reflect: below -20px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.9)));
+		  }
+		  .odometer-digit:nth-last-child(-n+2){
+		    border-radius: 0;
+		    box-shadow: none;
+		    background: #FFF;
+		    font-size:1.3em;
+		    vertical-align:baseline;
+		    -webkit-box-reflect: below -5px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(30%, transparent), to(rgba(255, 255, 255, 0.9)));
+		  }
+		}
+		.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-car.odometer-animating-up .odometer-ribbon-inner {
+		  transition: transform 5s;
+		}
+
+
+	}
+}
+
+.books-form{
+	.login{
+		display: flex;
+		justify-content: center;
+	}
+	label{
+		width:50% !important;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	.downloadCount{
+		.odometer-digit{
+			font-size:1em !important;
+		}		
+	}
+}
+
+@media screen and (max-width: 450px){
+	.download{
+		h1{
+			font-size:1.7em !important;
+		}
+
+	}
+	.downloadCount{
+		.odometer-digit{
+			font-size:.8em !important;
+		}		
+	}
+}
+
+@media screen and (max-width: 380px){
+	.download{
+		h1{
+			font-size:1.4em !important;
+		}
+
+	}
+	.downloadCount{
+		.odometer-digit{
+			font-size:.5em !important;
+		}		
+	}
+}

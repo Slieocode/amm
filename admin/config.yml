@@ -184,6 +184,8 @@ collections:
               - {label: "Third Box paragraph", name: "about_box_three_p", widget: "string"}
               - {label: "Fourth Box Title", name: "about_box_four_title", widget: "string"}
               - {label: "Fourth Box paragraph", name: "about_box_four_p", widget: "string"}
+              - {label: "Fifth Box Title", name: "about_box_five_title", widget: "string"}
+              - {label: "Fifth Box paragraph", name: "about_box_five_p", widget: "string"}
           - label: "Showcase Section"
             name: "showcase"
             widget: "object"

@@ -7,37 +7,34 @@
 	}
 }
 
-.header-about-us{
- background: linear-gradient(to left, rgba(241,231,103,1) 0%, darken(rgba(247,208,87,1), 4%) 46%, darken(rgba(254,182,69,1), 10%) 100%);
-   .content{
-   	display: flex;
-   }
-   .blurp{
- 		flex-basis: 60%;  	
-   	    display: flex;
-	    flex-direction: column;
-	    margin-top: 6%;
-   }
-   .illustration{
-	 margin-top:4%;
-   	 img{
-   	 	width:100%;
-   	 	height: 100%;
-   	 }
-   }
-	h1{
-		font-size:3.5em !important;
-		span{color:#000 !important; cursor: default;}
-		.underline:before{
-			background: $wc; 
+.aboutus-header{
+	height: 530px;
+	background: url('../img/about-us/01.jpg') no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	.overlay{
+		background: rgba(0, 0, 0, 0.6);		
+	}
+	.aboutus-holder{
+		display: flex;
+		margin-top:5%;
+		justify-content: left;
+	}
+	.aboutus-text{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 57%;
+		h1{
+		    font-size: 3.5em;
+		}
+		p{
+		    font-size: 1.5em;
+		    margin:0;
+			a{color:skyblue;}
 		}
 	}
-	p{
-		color:#000000ad !important;
-		width:500px;
-		font-size: 1.5em;
-	}
 }
+
 
 .about-us-info{
 	text-align: center;
