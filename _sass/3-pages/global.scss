@@ -166,3 +166,31 @@ fieldset{
 .link-color-switch{
   color:#000 !important;
 }
+
+.go-up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0;
+    z-index: -9;
+    background: #FFF;
+    color:#000; 
+    bottom: 100px;
+    border: 3px solid #000;
+    cursor: pointer;
+    z-index: 99999999;
+    right: 50px;
+    border-radius: 50%;
+    text-align: center;
+    transition:.1s;
+    i{font-size:2em;}
+    &:hover{
+      background:#000;
+      color:#FFF;
+    }
+}
+
+.subs{
+  margin-bottom:137px;
+}

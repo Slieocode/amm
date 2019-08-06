@@ -261,3 +261,16 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featImg", widget: "image", default: '/uploads'}
       - {label: "Body", name: "body", widget: "markdown"}
+  
+  #Articles Cateogires Collections 
+  - name: "sub" # Used in routes, e.g., /admin/collections/subcategory
+    label: "Blog categories" # Used in the UI
+    folder: "_subcategories" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: frontmatter
+    extension: html
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sub category (must be lowercase And use dashes between Words e.g: money-making)", name: "sub_categories", widget: "string"}

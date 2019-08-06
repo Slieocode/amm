@@ -16,6 +16,11 @@ $(document).ready(function(){
 	$(window).on('scroll', function(){
 
 		if($(window).scrollTop() > headerHeight){
+			$('.go-up').css({
+				opacity:1,
+				zIndex:9999,
+				transition:'1s'
+			})
 			$('.ul-nav').css({
 				opacity:1,
 				boxShadow:'0 15px 15px -15px rgba(0, 0, 0, 0.5)',
@@ -43,6 +48,10 @@ $(document).ready(function(){
 				display:'flex',
 				boxShadow:'none',
 				background: ($('.about-nav').length ? '#FFF':"none"),
+			})
+			$('.go-up').css({
+				opacity:'0',
+				zIndex:'-1'
 			})
 			$('.ul-nav a').removeClass('link-color-switch')
 		}
@@ -220,4 +229,41 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	        }
 	    } catch (ex) {}
 	}
+
+	/* Go to the top when clicked */
+	$('.go-up').on('click', function(){
+	   var scroll_pos=(0);          
+	   $('html, body').animate({scrollTop:(scroll_pos)}, '2000');
+	})
+
+	/* Youtube RealTime Subscriber Counter */
+	if(!$('.download').length){
+	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
+			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
+			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
+
+			container = document.querySelector(".container"),
+			col = document.querySelector(".counter"),
+			odometer = document.getElementById("odometer");
+
+			let subCount = 0;
+
+			const urls = [api_response];
+
+			setInterval(() => {
+			  requestCall(api_response);
+			}, 2000);
+
+			const requestCall = (apiCall) =>
+			fetch(apiCall).
+			then(blob => blob.json()).
+			then(data => {
+			  subCount = data.items[0].statistics.subscriberCount;
+			  odometer.innerHTML = subCount;
+			});
+	}else{
+		$('.subs').css({display:'none'})
+	}
+
+
 });

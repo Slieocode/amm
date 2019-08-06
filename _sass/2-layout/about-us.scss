@@ -128,7 +128,13 @@
 		}
 	}
 }
-
+@media screen and (max-width: 500px){
+	.pic{
+		img{
+			height:258px !important;
+		}
+	}
+}
 @media screen and (max-width: 450px){
 	.our-mission{
 		img{

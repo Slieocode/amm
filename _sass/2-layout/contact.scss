@@ -87,7 +87,7 @@
 		  position: relative;
 		  display: block;
 		}
-		label > input {
+		label > input, label > textarea {
 		  position: relative;
 		  background-color: transparent;
 		  border: none;
@@ -103,13 +103,12 @@
 		  box-sizing: content-box;
 		  transition: all .3s;
 		}
-		label > input:valid + span {
+		label > input:valid + span, label > textarea:valid + span {
 		  transform: translateY(-25px) scale(0.8);
 		  transform-origin: 0;
 		}
-		label > input:valid {
+		label > input:valid, label > textarea:valid {
 		  border-bottom: 1px solid #000;
-		  box-shadow: 0 1px 0 0 #000;
 		}
 		label > span {
 		  color: #9e9e9e;
@@ -120,12 +119,12 @@
 		  cursor: text;
 		  transition: .2s ease-out;
 		}
-		label > input:focus + span {
+		label > input:focus + span, label > textarea:focus + span {
 		  transform: translateY(-25px) scale(0.8);
 		  transform-origin: 0;
 		  color: #000;
 		}
-		label > input:focus {
+		label > input:focus, label > textarea:focus {
 		  border-bottom: 1px solid #000;
 		  box-shadow: 0 1px 0 0 #000;
 		}
