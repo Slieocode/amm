@@ -273,4 +273,4 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "subcategories"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Sub category (must be lowercase And use dashes between Words e.g: money-making)", name: "sub_categories", widget: "string"}
+      - {label: "Sub category (must be lowercase And use dashes between Words e.g: money-making)", name: "categories", widget: "string"}
