@@ -263,7 +263,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   
   #Articles Cateogires Collections 
-  - name: "sub" # Used in routes, e.g., /admin/collections/subcategory
+  - name: "subcategories" # Used in routes, e.g., /admin/collections/subcategory
     label: "Blog categories" # Used in the UI
     folder: "_subcategories" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
