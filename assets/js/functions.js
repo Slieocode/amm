@@ -237,7 +237,7 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length){
+	if(!$('.download').length && false){
 	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
 			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
 			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
@@ -264,6 +264,12 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	}else{
 		$('.subs').css({display:'none'})
 	}
+
+		$('.sub-link').each((index, el)=>{
+			 elm = $(el).text().split('-').join(' ')
+			 console.warn(elm)
+			$(el).text(elm);
+		});
 
 
 });

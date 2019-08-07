@@ -197,12 +197,40 @@ nav{
 	  display:flex;
 	  margin-top: 2.6%;
     .sub-li{
+      position: relative;
+      &:hover .link-holder{
+        transform: scale(1);
+        transform-origin: -100% 50%
+      }
+    }
+    .sub-li-a{
 	  	position: relative;
-	  	&:hover .link-holder{
+	  	&:hover .sub-link-holder{
 	  		transform: scale(1);
 	  		transform-origin: -100% 50%
 	  	}
 	  }
+    .sub-link-holder{
+      box-shadow: -13px 15px 0px -6px rgba(0, 0, 0, 0.2);
+      transform: scale(0);
+      position: absolute;
+      top: -32%;
+      left: -100%;
+      z-index: 999;
+      width: 300px;
+      height: auto;
+      background: #FFF;
+      transition: .3s;
+       a{
+            color:#000  !important;
+            width: 70%;
+            margin: 20px auto;  
+             &:hover{
+               color:$wc !important;
+             }   
+        }
+
+     }
 	  .link-holder{
   	  box-shadow: 13px 15px 0px -6px rgba(0, 0, 0, 0.2);
 	    transform: scale(0);
@@ -247,3 +275,37 @@ nav{
      justify-content: center;
    }
 }
+
+@media screen and (max-width: 430px){
+  nav{
+  }
+  header .ul-nav{
+    height: auto !important;
+    top:0 !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .links-li{
+      width:100% !important;
+      overflow-y:scroll;
+      overflow-x:hidden;
+  }
+  .link-holder{
+      top: 116% !important;
+      left: 10px !important;
+  }
+  .sub-link-holder{
+      left: 0 !important;
+      top: 121px !important;
+  }
+  .sub-link-holder.aussie-link{
+      left: 0 !important;
+      top: 42px !important;
+  }
+}
+
+
+
+
+
+

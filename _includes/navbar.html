@@ -13,7 +13,7 @@
       <li class="logo-mark">
             <div class="mark"><h2> <a href="/"> Aussie <br> Money Man </a></h2></div>    
       </li>
-      <li>
+      <li class="links-li">
          <ul class="sub-ul-container">
          <li><a href="/">Home</a></li>
          <li class="sub-li">
@@ -24,7 +24,35 @@
                 <a href="/faq">FAQ</a>
              </div>
          </li>
-         <li><a href="/articles">Articles</a></li>
+         <li class="sub-li">
+            <a href="#">Articles</a>
+            <div class="link-holder">
+
+                  <ul>
+                    <li class="sub-li sub-li-a">
+                      <a href="#">International</a>
+                        <div class="sub-link-holder">
+                         {% for post in site.posts %}
+                            {% if post.url contains '/international/' %}
+                               <a  class="sub-link" href=" {{post.url}} "> {{post.title | join: ' ' }} </a>
+                            {% endif %} 
+                        {% endfor %}
+                        </div>
+                    </li>
+                    <li class="sub-li sub-li-a">
+                      <a href="#">Aussie</a>
+                        <div class="sub-link-holder aussie-link">
+                         {% for post in site.posts %}
+                            {% if post.url contains '/aussie/' %}
+                               <a  class="sub-link" href=" {{post.url}} "> {{post.title | join:' ' }} </a>
+                            {% endif %} 
+                        {% endfor %}
+                        </div>
+                    </li>                    
+                  </ul>
+             </div>
+         </li>
+
          <li><a href="/books">Ebooks</a></li>
          <li><a href="/services">Services</a></li>     
          <li><a href="/recommendations">recommendations</a></li>
