@@ -8,8 +8,8 @@ layout: default
 	<div class="container">
 		<div class="faq-holder books-holder">
 			<div class="faq-text books-text">
-				<h1>Our Free Guide Book</h1>
-				<p> Download our free guide on how to make hundreds a week online with market research! Includes a list of the best ones. </p>
+				<h1> {{site.data.bookone.book.header_h1}} </h1>
+				<p>{{site.data.bookone.book.header_p}}  </p>
 				<button>Download Now!</button>
 			</div>
 		</div>
@@ -20,8 +20,8 @@ layout: default
 <section class="book-all">
 		<div class="container">
 			<div class="main-heading">
-				<h1>With Over 1000+ Downloads</h1>
-				<p>When I was little I had a car door slammed shut on my hand. I still remember it quite vividly. I checked to make sure that he was still alive.</p>
+				<h1>{{site.data.bookone.book.main_heading}} </h1>
+				<p>{{site.data.bookone.book.main_p}} </p>
 			</div>
 		</div>
 </section>
@@ -32,19 +32,19 @@ layout: default
 	<div class='faq-content'>
 			<div class="accordion js-accordion active">
 			  <div class="accordion__item js-accordion-item">
-			    <div class="accordion-header js-accordion-header">{{ site.data.faq.faq_one.faq_1_q1 }}</div> 
+			    <div class="accordion-header js-accordion-header">{{site.data.bookone.book.bookone_q1}} </div> 
 			  <div class="accordion-body js-accordion-body">
 			    <div class="accordion-body__contents">
-			      {{ site.data.faq.faq_one.faq_1_a1 }}
+			      {{site.data.bookone.book.bookone_a1}}
 			    </div>
 			    </div
 			    </div><!-- end of accordion body -->
 			  </div><!-- end of accordion item -->
 			  <div class="accordion__item js-accordion-item">
-			    <div class="accordion-header js-accordion-header">{{ site.data.faq.faq_one.faq_1_q2 }}</div> 
+			    <div class="accordion-header js-accordion-header">{{site.data.bookone.book.bookone_q2}}</div> 
 			  <div class="accordion-body js-accordion-body">
 			    <div class="accordion-body__contents">
-					{{ site.data.faq.faq_one.faq_1_a2 }}
+					{{site.data.bookone.book.bookone_a2}}
 			    </div>
 			      <div class="accordion js-accordion">
 			        <div class="accordion__item js-accordion-item">
@@ -59,32 +59,24 @@ layout: default
 			    </div><!-- end of accordion body -->
 			  </div><!-- end of accordion item -->
 			    <div class="accordion__item js-accordion-item">
-			    <div class="accordion-header js-accordion-header">{{ site.data.faq.faq_one.faq_1_q3 }}</div> 
+			    <div class="accordion-header js-accordion-header">{{site.data.bookone.book.bookone_q3}}</div> 
 			  <div class="accordion-body js-accordion-body">
 			    <div class="accordion-body__contents">
-			      {{ site.data.faq.faq_one.faq_1_a3 }}
+			      {{site.data.bookone.book.bookone_a3}}
 			    </div>
 			    </div><!-- end of accordion body -->
 			  </div><!-- end of accordion item -->
 			     <div class="accordion__item js-accordion-item">
-			    <div class="accordion-header js-accordion-header">{{ site.data.faq.faq_one.faq_1_q4 }}</div> 
+			    <div class="accordion-header js-accordion-header">{{site.data.bookone.book.bookone_q4}}</div> 
 			  <div class="accordion-body js-accordion-body">
 			    <div class="accordion-body__contents">
-			              {{ site.data.faq.faq_one.faq_1_a4 }}
+			              {{site.data.bookone.book.bookone_a4}}
 			    </div>
 			      <div class="accordion js-accordion">
 			    </div><!-- end of accordion body -->
 			  </div><!-- end of accordion item -->
 		</div>
 			     <div class="accordion__item js-accordion-item">
-			    <div class="accordion-header js-accordion-header">{{ site.data.faq.faq_one.faq_1_q5 }}</div> 
-			  <div class="accordion-body js-accordion-body">
-			    <div class="accordion-body__contents">
-					{{ site.data.faq.faq_one.faq_1_a5 }}
-			    </div>
-			      <div class="accordion js-accordion">
-			    </div><!-- end of accordion body -->
-			  </div><!-- end of accordion item -->
 			  <a class="link" target="_base" href="/about-us">Learn About AMM</a>
 		</div>
 </section>

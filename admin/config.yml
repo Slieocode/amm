@@ -65,7 +65,29 @@ collections:
               - {label: "Second Heading", name: "main_h1", widget: "string"}
               - {label: "Second Paragraph", name: "main_p", widget: "string"}
               - {label: "Section Heading", name: "body", widget: "markdown"}
-              # section two
+
+      # Recommendations page
+      - label: "Book One Page"
+        name: "rec"
+        file: "_data/bookone.yml"
+        fields:
+          - label: "book One Landing Page"
+            name: "book"
+            widget: "object"
+            fields:
+              - {label: "Header Heading", name: "header_h1", widget: "string"}
+              - {label: "Header Paragraph", name: "header_p", widget: "string"}
+              - {label: "Second Heading", name: "main_heading", widget: "string"}
+              - {label: "Second Paragraph", name: "main_p", widget: "string"}
+              - {label: "Question One", name: "bookone_q1", widget: "string"}
+              - {label: "Answer One", name: "bookone_a1", widget: "string"}
+              - {label: "Question Two", name: "bookone_q2", widget: "string"}
+              - {label: "Answer Two", name: "bookone_a2", widget: "string"}
+              - {label: "Question Three", name: "bookone_q3", widget: "string"}
+              - {label: "Answer Three", name: "bookone_a3", widget: "string"}
+              - {label: "Question Four", name: "bookone_q4", widget: "string"}
+              - {label: "Answer Four", name: "bookone_a4", widget: "string"}
+
 
       # Services  page
       - label: "Services Page"

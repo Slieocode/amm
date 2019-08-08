@@ -80,7 +80,6 @@ function loading(){
 
 function closeSearch() {
     loading();
-    pageContainer.classList.remove('page--move');
     searchContainer.classList.remove('search--open');
     inputSearch.blur();
     inputSearch.value = '';
@@ -88,6 +87,8 @@ function closeSearch() {
       el.style.display = 'none';  
   })
 }
+    let header_height = $('header').css('height');
+
 
 function initSearch() {
   
@@ -107,6 +108,12 @@ function initSearch() {
 
     // Get search results on submission of form
     $(document).on("submit", $searchForm, function(e) {
+        $('.search-res').css({display:'flex'})
+        $('header').css({height:0})
+        $('.search-container').fadeIn()
+        $('.container').css({display:'none'})
+        $('section:not(.card-holder)').css({display:'none'})
+        $('footer').css({display:'none'})
         if($('.search__input').val().length === 0){
           return false;
         }
@@ -116,7 +123,12 @@ function initSearch() {
         closeSearch();
     });
 }
-
+$('.close-search-i').on('click', function(){
+    $('.search-container').fadeOut(500);
+    $('.container, section, footer').fadeIn(700);
+    $('header').css({height:header_height})
+    console.log(header_height)
+})
 
 /**
  * Executes search

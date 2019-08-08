@@ -24,23 +24,15 @@
 	}
 
 	function openSearch() {
-		pageContainer.classList.add('page--move');
 		searchContainer.classList.add('search--open');
 		inputSearch.focus();
-		document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
-			el.style.display = 'block';	
-		})
 		$('.js .search').css({background:"#FFF"})
 	}
 
 	function closeSearch() {
-		pageContainer.classList.remove('page--move');
 		searchContainer.classList.remove('search--open');
 		inputSearch.blur();
 		inputSearch.value = '';
-		document.querySelectorAll('.page__folder--dummy').forEach((el)=>{
-			el.style.display = 'none';	
-		})
 		$('.js .search').css({background:"none"})
 	}
 

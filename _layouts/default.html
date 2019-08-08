@@ -4,10 +4,12 @@
 	{%include head.html%}
 </head>
 <body>
-	{{content}}
+  {% include search_1.html %}
+  {{content}}
 
-	{%include js-links.html%}
-	
+{% include search_2.html %}
+  {%include js-links.html%}
+  
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -20,6 +22,5 @@
   }
 </script>
 {% include goup.html %}
-
 </body>
 </html> 

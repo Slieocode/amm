@@ -18,28 +18,27 @@ layout: default
 
 <section class="contact-form">
 	<div class="container">
-		<form action="/">
+		<form  action="https://getsimpleform.com/messages?form_api_token=114b7c2f537d2e08bdb0b9d97fff668e" method="post">
 		    <p>GET IN TOUCH</p>
-		    
+		     <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thanks' />
 		    <div class="login">
 				<label>
-				    <input type="text" required="required"/>
+				    <input type="text" required="required" name="Name" />
 				    <span>Name</span>
 				<label>
 				<label>
-				    <input type="text" required="required"/>
+				    <input type="text" required="required" name="Email" />
 				    <span>Email</span>					
 				</label>
 				<label>
-				    <input type="text" required="required"/>
+				    <input type="text" required="required" name="Subject" />
 				    <span>Subject</span>					
 				</label>
 			    <label class="msg">
-			      <input type="text" class="area"></textarea>
+			      <input type="text" class="area" name="Message"></textarea>
 			     <span>message</span>
 			    </label>
 		    </div>
-		    
 		    <button class="btn" type="submit"> Send Message </button>
 		</form>
 	</div>
