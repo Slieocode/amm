@@ -110,6 +110,28 @@ collections:
               - {label: "Question Four", name: "booktwo_q4", widget: "string"}
               - {label: "Answer Four", name: "booktwo_a4", widget: "string"}
 
+      # Book Three page
+      - label: "Book Two Page"
+        name: "bookth"
+        file: "_data/bookthree.yml"
+        fields:
+          - label: "book Three Landing Page"
+            name: "bookth"
+            widget: "object"
+            fields:
+              - {label: "Header Heading", name: "header_h1", widget: "string"}
+              - {label: "Header Paragraph", name: "header_p", widget: "string"}
+              - {label: "Second Heading", name: "main_heading", widget: "string"}
+              - {label: "Second Paragraph", name: "main_p", widget: "string"}
+              - {label: "Question One", name: "bookthree_q1", widget: "string"}
+              - {label: "Answer One", name: "bookthree_a1", widget: "string"}
+              - {label: "Question Two", name: "bookthree_q2", widget: "string"}
+              - {label: "Answer Two", name: "bookthree_a2", widget: "string"}
+              - {label: "Question Three", name: "bookthree_q3", widget: "string"}
+              - {label: "Answer Three", name: "bookthree_a3", widget: "string"}
+              - {label: "Question Four", name: "bookthree_q4", widget: "string"}
+              - {label: "Answer Four", name: "bookthree_a4", widget: "string"}
+
 
       # Services  page
       - label: "Services Page"
