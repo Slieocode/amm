@@ -1,15 +1,22 @@
 book:
-  header_h1: Our Free Guide Book
-  header_p: Download our free guide on how to make hundreds a week online with market research! Includes a list of the best ones.
-  main_heading: With Over 1000+ Downloads
-  main_p: When I was little I had a car door slammed shut on my hand. I still remember it quite vividly. I checked to make sure that he was still alive.
-  bookone_q1: What kind of book this is?
-  bookone_a1: We provide free, holistic, unbiased and unique information on business and finance topics.
-  bookone_q2: is it for free?
-  bookone_a2: Yes, all our content is free. We pride ourselves on providing free, holistic, unbiased and unique information.
-  bookone_q3: how long it takes to finish this book?
+  bookone_a1: >-
+    We provide free, holistic, unbiased and unique information on business and
+    finance topics.
+  bookone_a2: >-
+    Yes, all our content is free. We pride ourselves on providing free,
+    holistic, unbiased and unique information.
   bookone_a3: About 3 days to 7 days depends on your reading speed
-  bookone_q4: What genre this book belongs to?
   bookone_a4: Marketing Research and matched betting.
-  bookonelink: '/'
-
+  bookone_q1: What kind of book this is?
+  bookone_q2: is it for free?
+  bookone_q3: how long it takes to finish this book?
+  bookone_q4: What genre this book belongs to?
+  bookonelink: 'https://docs.wixstatic.com/ugd/3fb037_812db616b5d7455eb540415132dd0688.pdf'
+  header_h1: Our Free Guide Book
+  header_p: >-
+    Download our free guide on how to make hundreds a week online with market
+    research! Includes a list of the best ones.
+  main_heading: With Over 1000+ Downloads
+  main_p: >-
+    When I was little I had a car door slammed shut on my hand. I still remember
+    it quite vividly. I checked to make sure that he was still alive.
