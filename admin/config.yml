@@ -111,7 +111,7 @@ collections:
               - {label: "Question Four", name: "booktwo_q4", widget: "string"}
               - {label: "Answer Four", name: "booktwo_a4", widget: "string"}
               - {label: "Book Link", name: "booktwolink", widget: "string"}
-              - {label: "Make Visible (Write true To Make The Page Visible)", name: "visible", widget: "boolean", default: false}
+              - {label: "Make Visible", name: "visible", widget: "boolean", default: false}
 
 
       # Book Three page
@@ -136,7 +136,7 @@ collections:
               - {label: "Question Four", name: "bookthree_q4", widget: "string"}
               - {label: "Answer Four", name: "bookthree_a4", widget: "string"}
               - {label: "Book Link", name: "bookthreelink", widget: "string"}
-              - {label: "Make Visible (Write true To Make The Page Visible)", name: "visible", widget: "boolean", default: false}
+              - {label: "Make Visible", name: "visible", widget: "boolean", default: false}
 
       # Services  page
       - label: "Services Page"
