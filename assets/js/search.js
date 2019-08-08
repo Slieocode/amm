@@ -107,7 +107,7 @@ function initSearch() {
     }
 
     // Get search results on submission of form
-    $(document).on("submit", $searchForm, function(e) {
+    $("[data-search-form]").on("submit", function(e) {
         $('.search-res').css({display:'flex'})
         $('header').css({height:0})
         $('.search-container').fadeIn()
