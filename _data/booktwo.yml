@@ -12,4 +12,5 @@ bookt:
   booktwo_q4: What genre this book belongs to?
   booktwo_a4: Marketing Research and matched betting.
   booktwolink: '/'
+  visible: false
 

@@ -12,3 +12,5 @@ bookth:
   bookthree_q4: What genre this book belongs to?
   bookthree_a4: Marketing Research and matched betting.
   bookthreelink: "/"
+  visible: false
+
