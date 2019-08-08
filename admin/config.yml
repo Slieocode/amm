@@ -90,11 +90,11 @@ collections:
 
       # Book Two page
       - label: "Book Two Page"
-        name: "book"
+        name: "bookt"
         file: "_data/booktwo.yml"
         fields:
           - label: "book Two Landing Page"
-            name: "book"
+            name: "bookt"
             widget: "object"
             fields:
               - {label: "Header Heading", name: "header_h1", widget: "string"}
