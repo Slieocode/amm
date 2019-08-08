@@ -68,7 +68,7 @@ collections:
 
       # Recommendations page
       - label: "Book One Page"
-        name: "rec"
+        name: "book"
         file: "_data/bookone.yml"
         fields:
           - label: "book One Landing Page"
