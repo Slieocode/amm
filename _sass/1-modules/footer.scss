@@ -1,4 +1,13 @@
 footer{
+	a.sub{
+		padding: 12px;
+	    font-size: 1.3em;
+	    background: #FF0000;
+	    margin-bottom: 10px;
+	    color: #FFF;
+	    border-radius: 30px;
+	    font-weight: bold;
+	}
 	.first-section{
 		background:$accent;
 	}

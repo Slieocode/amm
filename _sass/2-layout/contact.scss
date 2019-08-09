@@ -31,7 +31,24 @@
 
 
 .contact-form{
-			p{
+		select{
+		    margin-bottom: 52px;
+		    padding: 17px;
+		    width: 100%;
+		    font-size: 1.1em;
+		    border: none;
+		    border-bottom: 1px solid #c1b6b6;
+		    transition:.3s;
+		    &:active{
+				outline:none;
+		    }
+		    &:focus{
+				outline:none;
+				border-bottom:3px solid #000;
+		    }
+		}
+		
+		p{
 		  text-align: center;
 		  letter-spacing: 1px;  
 		  font-size: 45px;

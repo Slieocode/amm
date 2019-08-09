@@ -198,6 +198,7 @@ nav{
 	  margin-top: 2.6%;
     .sub-li{
       position: relative;
+      height: 100%;
       &:hover .link-holder{
         transform: scale(1);
         transform-origin: -100% 50%

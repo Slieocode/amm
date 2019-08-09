@@ -74,13 +74,16 @@
 
 @media screen and (max-width: 990px ){
 	.header-about{
+		height: auto !important;
 		.holder{
 			padding-top:15% !important;
 			position: static;
-			.picture{
-				display: none;
-			}
+			flex-direction: column;
+			// .picture{
+			// 	display: none;
+			// }
 			.blurp{
+				width:100% !important;
 				p{
 					width:500px ;
 				}

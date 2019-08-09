@@ -175,7 +175,7 @@ header {
 		    flex-basis: 82%;
 		    margin-right: 0%;
 			img{
-				width:100%;
+				width: 115%;
 				height: 100%;
 			}
 		}
@@ -208,6 +208,7 @@ header {
 			ul{
 				list-style: circle;
 				line-height:1.7;
+
 				li span{
 					font-size:1.4em;
 				}
@@ -262,6 +263,14 @@ header {
 					text-align: center;
 					border:1px solid #FFF;
 					border-radius: 10px;
+					transition:.6s background;
+					&:hover{
+						background:$accent;
+						color:#FFF;
+					}
+				 	&:hover div > p{
+						color:#FFF;
+				 	}
 					i{
 						transform: translateZ(20px);	
 						line-height: 1.3;
