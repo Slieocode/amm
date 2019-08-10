@@ -226,6 +226,26 @@ collections:
               - {label: "Answer 1", name: "faq_3_a1", widget: "string"}
               - {label: "Question 2", name: "faq_3_q2", widget: "string"}
               - {label: "Answer 2", name: "faq_3_a2", widget: "string"}
+      
+        # Contact Page
+      - label: "Contact Page"
+        name: "contactus"
+        file: "_data/contact.yml"
+        fields:
+          - label: "Contact Landing page"
+            name: "contactus"
+            widget: "object"
+            fields:
+              - {label: "Header Heading", name: "header_h1", widget: "string"}
+              - {label: "Header Paragraph", name: "header_p", widget: "string"}
+              - {label: "Second Heading", name: "main_h1", widget: "string"}
+          
+          - label: "Select List"
+            widget: "list"
+            allow_add: true
+            fields:   
+              - {label: List Options, name: list, widget: string}
+
 
         # Home page              
       - label: "Home Page"

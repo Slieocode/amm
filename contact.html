@@ -8,8 +8,8 @@ layout: default
 	<div class="container">
 		<div class="faq-holder contact-holder">
 			<div class="faq-text contact-text">
-				<h1> We'd Love to Hear From You! </h1>
-				<p>if you have any questions, inquiries, suggestions or offers we'd love to hear from you, you can contact us down below and we will get in touch as soon as possible </p>
+				<h1> {{ site.data.contact.contactus.header_h1 }} </h1>
+				<p>{{ site.data.contact.contactus.header_p }} </p>
 			</div>
 		</div>
 	</div>
@@ -19,7 +19,7 @@ layout: default
 <section class="contact-form">
 	<div class="container">
 		<form  action="https://getsimpleform.com/messages?form_api_token=114b7c2f537d2e08bdb0b9d97fff668e" method="post">
-		    <p>GET IN TOUCH</p>
+		    <p>{{ site.data.contact.contactus.main_h1 }}</p>
 		     <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thanks' />
 		    <div class="login">
 				<label>
@@ -31,24 +31,14 @@ layout: default
 				    <span>Email</span>					
 				</label>
 				    <select name="subject" id="subject">
-				    	<option value="Comparasions and reviews of financial products and services">
-							Comparasions and reviews of financial products and services
-				    	</option>
-				    	<option value="Speaking Events">
-							Speaking Event
-				    	</option>
-				    	<option value="School Courses in partnership with BOP Industries">
-							School Courses in partnership with BOP Industries
-				    	</option>
-				    	<option value="Recommendations for general money making">
-							Recommendations for general money making
-				    	</option>
-				    	<option value="Other">
-							Other
-				    	</option>
+				    	{% for list in site.data.contact.list %}
+					    	<option value=" {{ list.item }} ">
+								 {{ list.item }} 
+					    	</option>
+				    	{% endfor %}
 					</select>
-			    <label class="msg">
-			      <input type="text" class="area" name="Message"></textarea>
+			    <label class="msg" >
+			    <input type="text" required="required" class="area" name="Email" />
 			     <span>message</span>
 			    </label>
 		    </div>
