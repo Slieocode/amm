@@ -246,11 +246,6 @@ collections:
             allow_add: true
             fields:   
               - {label: List Options, name: item, widget: string}
-              - {label: List Options, name: item, widget: string}
-              - {label: List Options, name: item, widget: string}
-              - {label: List Options, name: item, widget: string}
-              - {label: List Options, name: item, widget: string}
-
 
         # Home page              
       - label: "Home Page"
