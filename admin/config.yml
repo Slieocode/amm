@@ -245,7 +245,7 @@ collections:
             name: list
             allow_add: true
             fields:   
-              - {label: List Options, name: list, widget: string}
+              - {label: List Options, name: item, widget: string}
 
 
         # Home page              

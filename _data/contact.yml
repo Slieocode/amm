@@ -1,13 +1,11 @@
 contactus:
   header_h1: We'd Love to Hear From You!
-  header_p: >-
-    if you have any questions, inquiries, suggestions or offers we'd love to
-    hear from you, you can contact us down below and we will get in touch as
-    soon as possible
+  header_p: if you have any questions, inquiries, suggestions or offers we'd love to hear from you, you can contact us down below and we will get in touch as soon as possible
   main_h1: GET IN TOUCH
+
 list:
-  - list: some
-  - list: needs
-  - list: to have
-  - list: anything
-  - list: something new!
+  - item: Comparasions and reviews of financial products and services
+  - item: Speaking Event
+  - item: School Courses in partnership with BOP Industries
+  - item: Recommendations for general money making
+  - item: Other
