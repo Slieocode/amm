@@ -242,6 +242,7 @@ collections:
           
           - label: "Select List"
             widget: "list"
+            name: list
             allow_add: true
             fields:   
               - {label: List Options, name: list, widget: string}
