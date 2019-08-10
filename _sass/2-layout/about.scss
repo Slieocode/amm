@@ -121,7 +121,10 @@
 @media screen and (max-width: 490px){
 	.header-about{
 		.holder{
-			padding-top:50% !important;
+			.picture{
+				    width: 75.5% !important;
+			}
+			padding-top:13% !important;
 			transform:scale(.9);
 		    h1{
 		    	font-size:1.5em !important;

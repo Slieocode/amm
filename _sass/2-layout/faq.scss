@@ -254,6 +254,12 @@ section{
 }
 
 @media screen and (max-width: 490px){
+	.js-accordion-header{
+		font-size:.9em !important;
+	}
+	.accordion-body__contents{
+		font-size: 1em !important
+	}
 	.main-heading{
 		h1{
 			font-size:1.4em;

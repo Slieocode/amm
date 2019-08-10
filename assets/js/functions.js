@@ -38,7 +38,6 @@ $(document).ready(function(){
 			if(!$('.about-nav').length){
 				$('.icon--search').css({fill:'#000'})
 			}
-			console.warn($('.icon--search'))
 		}else if($(window).scrollTop() > diff){
 			// $('.nav').css({
 			// 	position:'',
@@ -83,7 +82,6 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	});
 		$(window).on('resize', function(){
 		if(window.matchMedia('(min-width: 950px)').matches){
-			console.log('arrived')
 			$('nav').fadeIn();	
 		}
 	})
@@ -276,7 +274,6 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 
 		$('.sub-link').each((index, el)=>{
 			 elm = $(el).text().split('-').join(' ')
-			 console.warn(elm)
 			$(el).text(elm);
 		});
 
@@ -284,7 +281,6 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 		$('.services-btn, .popa').each((index, el) => {
 			$(el).on('click', function(){
 				let className = $(el).attr('class').match(/pop-\d/)[0];
-				console.log(className)
 				$('.'+className).css({
 					transform:'scale(1) translateX(50%) ',
 					transformOrigin:'center center',

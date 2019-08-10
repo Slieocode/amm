@@ -151,7 +151,11 @@
       }
       .media-1, .media-2{
         flex-direction: column;
+        margin-top:8%;
         align-items: center;
+        img{
+          margin-top: 20% !important;
+        }
       }
     }
 }
