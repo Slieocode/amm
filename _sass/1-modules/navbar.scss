@@ -188,6 +188,7 @@ nav{
           }
       }
   }
+  // remove the jquery code on desktop regarding the links 
      
   }
 .sub-ul-container{
@@ -198,7 +199,6 @@ nav{
 	  margin-top: 2.6%;
     .sub-li{
       position: relative;
-      height: 100%;
       &:hover .link-holder{
         transform: scale(1);
         transform-origin: -100% 50%
@@ -206,6 +206,8 @@ nav{
     }
     .sub-li-a{
 	  	position: relative;
+      display: none;
+      margin:0;
 	  	&:hover .sub-link-holder{
 	  		transform: scale(1);
 	  		transform-origin: -100% 50%
@@ -219,7 +221,7 @@ nav{
       left: -100%;
       z-index: 999;
       width: 300px;
-      height: auto;
+      display: none;
       background: #FFF;
       transition: .3s;
        a{
@@ -240,7 +242,7 @@ nav{
 		  left:-50%;
 		  z-index: 999;
 	    width: 300px;
-	    height: auto;
+	    display: none;
 	    background:#FFF;
 	    transition:.3s;
 		a{
@@ -264,10 +266,19 @@ nav{
      margin:0 !important;
      text-align: center;
    }
+
+   .link-holder, .sub-link-holder{
+      position: static !important;
+      margin:0 !important;
+      width:100% !important;
+      padding:10px;
+   }
+
     .sub-li{
+
       &:focus .link-holder{
         transform: scale(1);
-        transform-origin: -100% 50%
+        transform-origin: -100% 50%;
       }
     }
 
@@ -292,18 +303,18 @@ nav{
       overflow-y:scroll;
       overflow-x:hidden;
   }
-  .link-holder{
-      top: 116% !important;
-      left: 10px !important;
-  }
-  .sub-link-holder{
-      left: 0 !important;
-      top: 121px !important;
-  }
-  .sub-link-holder.aussie-link{
-      left: 0 !important;
-      top: 42px !important;
-  }
+  // .link-holder{
+  //     top: 116% !important;
+  //     left: -50% !important;
+  // }
+  // .sub-link-holder{
+  //     left: -50% !important;
+  //     top: 121px !important;
+  // }
+  // .sub-link-holder.aussie-link{
+  //     left: -50% !important;
+  //     top: 42px !important;
+  // }
 }
 
 

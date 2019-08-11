@@ -13,6 +13,52 @@ $(document).ready(function(){
 		// 	}
 		// }
 
+		/* Mobile Menu Handler */
+		if(window.matchMedia('(max-width: 900px)').matches){
+			$('.sub-link-holder').css({
+				transform:'scale(1)'
+			})
+			$('.link-holder').css({
+				transform:'scale(1)'
+			})
+			$('.main-li').on({
+				click: function(){
+				   	$(this).find('.sub-li').fadeIn();
+
+				   	$(this).find('.link-holder').fadeIn()
+
+				},
+			});
+
+		   	$('.sub-li-a').on({
+		   		click: function(){
+		   			$(this).find('.sub-link-holder').fadeIn()
+		   		},
+		   		mouseleave: function(){
+						$(this).find('.sub-link-holder')
+		   		}
+		   	});
+		}else{
+			$('.main-li').on({
+				mouseover: function(){
+				   	$(this).find('.sub-li').fadeIn();
+
+				   	$(this).find('.link-holder').fadeIn()
+
+				},
+			});
+
+		   	$('.sub-li-a').on({
+		   		mouseover: function(){
+		   			$(this).find('.sub-link-holder').fadeIn()
+		   		},
+		   		mouseleave: function(){
+						$(this).find('.sub-link-holder')
+		   		}
+		   	});			
+		}
+
+
 	$(window).on('scroll', function(){
 
 		if($(window).scrollTop() > headerHeight){
@@ -244,7 +290,7 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length){
+	if(!$('.download').length && false){
 	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
 			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
 			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
