@@ -9,7 +9,7 @@
 
 .aboutus-header{
 	height: 530px;
-	background: url('../img/about-us/01.jpg') no-repeat;
+	background: url('../img/about-us/01.png') no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 	.overlay{
@@ -18,7 +18,7 @@
 	.aboutus-holder{
 		display: flex;
 		margin-top:5%;
-		justify-content: left;
+		justify-content: center;
 	}
 	.aboutus-text{
 		display: flex;
@@ -26,10 +26,13 @@
 		flex-basis: 57%;
 		h1{
 		    font-size: 3.5em;
+		    text-align: center;
+		    margin:0 auto;
 		}
 		p{
 		    font-size: 1.5em;
-		    margin:0;
+		    margin:50px auto;
+		    text-align: center;
 			a{color:skyblue;}
 		}
 	}

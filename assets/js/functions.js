@@ -13,6 +13,14 @@ $(document).ready(function(){
 		// 	}
 		// }
 
+		/* home page featured Image Change Handler on mobile */
+		if(window.matchMedia('(max-width: 798px)').matches){
+			$('.featured-img').attr('src', './assets/img/nick.jpg');
+			$('.featured-img').css({
+				borderRadius:'50%'
+			})
+		}
+
 		/* Mobile Menu Handler */
 		if(window.matchMedia('(max-width: 900px)').matches){
 			$('.sub-link-holder').css({
@@ -21,11 +29,13 @@ $(document).ready(function(){
 			$('.link-holder').css({
 				transform:'scale(1)'
 			})
+
 			$('.main-li').on({
 				click: function(){
+					$(this).siblings().find('.link-holder').fadeOut();
 				   	$(this).find('.sub-li').fadeIn();
 
-				   	$(this).find('.link-holder').fadeIn()
+				   	$(this).find('.link-holder').fadeIn();
 
 				},
 			});
@@ -33,6 +43,8 @@ $(document).ready(function(){
 		   	$('.sub-li-a').on({
 		   		click: function(){
 		   			$(this).find('.sub-link-holder').fadeIn()
+		   			$(this).siblings().find('.sub-link-holder').fadeOut();
+
 		   		},
 		   		mouseleave: function(){
 						$(this).find('.sub-link-holder')
@@ -290,7 +302,7 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length && false){
+	if(!$('.download').length){
 	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
 			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
 			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,

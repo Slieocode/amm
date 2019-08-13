@@ -207,6 +207,9 @@
 }
 
 @media screen and (max-width: 1100px){
+	.services-item{
+		position: relative;
+	}
 	.services-row{
 		flex-direction: column;
 		height: auto !important;
@@ -223,6 +226,7 @@
 		    border-radius: 20px;
 		}
 	}
+
 	.services-2{
 		.services-box-holder{
 			flex-direction:column;
