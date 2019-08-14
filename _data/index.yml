@@ -69,12 +69,12 @@ showcase:
   showcase_heading: <h1>What we cover here at <span class="underline">AMM</span></h1>
 stats:
   btn: Learn More
-  people: '254'
-  people_txt: People Helped
+  people: '1400'
+  people_txt: Views Daily
   percent: 96%
   phrase: 'AMM, True Busniess<br> And Financial Freedom'
   smallHeading: The Difference
-  stat_p: Business Increased
+  stat_p: Return Rate
 clients:
   c_1_date: 19 Nov
   c_1_heading: Working With Nick is one of the highlights of my career
