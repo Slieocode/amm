@@ -28,14 +28,19 @@ $(document).ready(function(){
 			})
 			$('.link-holder').css({
 				transform:'scale(1)'
-			})
-
+			})	
+			let subdiv;
 			$('.main-li').on({
 				click: function(){
-					$(this).siblings().find('.link-holder').fadeOut();
-				   	$(this).find('.sub-li').fadeIn();
+					subdiv = $(this).find('.link-holder');
+					if(subdiv.css('display') === "none"){
+						$(this).siblings().find('.link-holder').fadeOut();
+					   	$(this).find('.sub-li').fadeIn();
 
-				   	$(this).find('.link-holder').fadeIn();
+					   	$(this).find('.link-holder').fadeIn();
+					}else{
+						subdiv.fadeOut();
+					}
 
 				},
 			});
@@ -302,7 +307,7 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length){
+	if(!$('.download').length && false){
 	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
 			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
 			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,

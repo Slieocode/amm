@@ -6,6 +6,7 @@ home:
     business development  and IT professional. I also own a blog on Australian
     Personal Finance and Entrepreneurship.
 about:
+  about_heading_box: Why We Are Different
   about_box_five_p: >-
     High-speed internet with over 99% reliability, so you can do stream, and
     download worry-free all the time 24/7.
@@ -26,9 +27,17 @@ about:
     High-speed internet with over 99% reliability, so you can do stream, and
     download worry-free all the time 24/7.
   about_box_two_title: Holistic
+  about_title_one: Do less, Get More.
   about_heading: <span class="underline">Nicholas G. Muscat</span>.
   about_paragraph: 'Our Misson: Sharing wholistic, unbiased and unique information.'
-  about_title_one: 'Do less, Get More.'
+  about_point_1: 'Networth 100k before 20.'
+  about_point_1_p: 'consequuntur fugit iure at repudiandae . Veritatis, nesciunt, impedit!'
+  about_point_2: 'Started multiple profitable businesses.'
+  about_point_2_p: 'consequuntur fugit iure at repudiandae . Veritatis, nesciunt, impedit!'
+  about_point_3: 'Started multiple profitable businesses.'
+  about_point_3_p: 'consequuntur fugit iure at repudiandae . Veritatis, nesciunt, impedit!'
+  about_point_4: 'Spent Years researching the most efficient to achieve sucess.'
+  about_point_4_p: 'consequuntur fugit iure at repudiandae. consequuntur fugit iure at repudiandae. consequuntur fugit iure at repudiandae. Veritatis, nesciunt, impedit!'
 showcase:
   item_1_p: >-
     Nice one matie boy burke hanky panky A bit of how's your father blower boot
@@ -67,6 +76,8 @@ showcase:
     it's.
   item_9_title: Wealth creation
   showcase_heading: <h1>What we cover here at <span class="underline">AMM</span></h1>
+  showcase_p: While what we may cover here is broad, you can bet if it is covered, it is done well. That is, wholtically, unbiased and from experience.
+
 stats:
   btn: Learn More
   people: '254'
