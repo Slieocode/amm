@@ -1,14 +1,16 @@
 contactus:
   header_h1: We'd Love to Hear From You!
   header_p: >-
-    if you have any questions, inquiries, suggestions or offers we'd love to
-    hear from you, you can contact us down below and we will get in touch as
-    soon as possible
+    With hundreds of messages and emails weekly, we find many questions are the
+    same so please check out our FAQ, should your question no appear simply get
+    in contact below!
   main_h1: GET IN TOUCH
 list:
-  - item: Comparasions and reviews of financial products and services
-  - item: Speaking Event
-  - item: School Courses in partnership with BOP Industries
-  - item: Recommendations for general money making
+  - item: Content Recommendation or Question
+  - item: Partner with AMM
+  - item: School Courses
+  - item: Mentorship
+  - item: Speaking Events
+  - item: Work for AMM
+  - item: Media Enquiry
   - item: Other
-  - item: Another one!
