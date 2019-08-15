@@ -361,6 +361,7 @@ collections:
       - {label: "Sub Category (must be lowercase And use dashes between Words e.g: ecommerce)", name: "tags", widget: "string"}
       - {label: "author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}      
       - {label: "Featured Image", name: "featImg", widget: "image", default: '/uploads'}
       - {label: "Body", name: "body", widget: "markdown"}
 
