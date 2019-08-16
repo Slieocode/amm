@@ -190,6 +190,30 @@ collections:
               - {label: "Pinterest Hyperlink", name: "link_pin", widget: "string"}
               - {label: "Disclaimer", name: "disclaimer", widget: "string"}
               - {label: "Copyrights", name: "copyrights", widget: "string"}
+      # navbar
+      - label: "Navbar Content"
+        name: "navbar"
+        file: "_data/navbar.yml"
+        fields:
+          - label: "footer content"
+            name: "links"
+            widget: "object"
+            fields:
+              - {label: "Link One", name: "link1", widget: "string"}
+              - {label: "Link Two", name: "link2", widget: "string"}
+              - {label: "Sub Link Two-1", name: "link2_1", widget: "string"}
+              - {label: "Sub Link Two-2", name: "link2_2", widget: "string"}
+              - {label: "Sub Link Two-3", name: "link2_3", widget: "string"}
+              - {label: "Link Three", name: "link3", widget: "string"}
+              - {label: "Link Four", name: "link4", widget: "string"}
+              - {label: "Sub Link Four-1", name: "link4_1", widget: "string"}
+              - {label: "Sub Link Four-2", name: "link4_2", widget: "string"}
+              - {label: "Sub Link Four-3", name: "link4_3", widget: "string"}
+              - {label: "Link Five", name: "link5", widget: "string"}
+              - {label: "Link Six", name: "link6", widget: "string"}
+              - {label: "Link Seven", name: "link7", widget: "string"}
+              - {label: "Sub Link Seven-1", name: "link7_1", widget: "string"}
+              - {label: "Sub Link Seven-2", name: "link7_2", widget: "string"}
 
         # FAQ Page
       - label: "FAQ Page"
