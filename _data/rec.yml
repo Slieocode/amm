@@ -13,7 +13,10 @@ rec:
 
 
     <li><a href="#">Bonus Bank</a><p>Enjoy non-stop streaming, gaming, and
-    surfing.</p></li></ol></div>
+    surfing.</p></li>
+
+
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Market Research</h1><ol><li><a
@@ -22,7 +25,10 @@ rec:
 
 
     <li><a href="#">Telmy</a><p>Enjoy non-stop streaming, gaming, and
-    surfing.</p></li></ol></div>
+    surfing.</p></li>
+
+
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Stocks</h1><ol><li><a href="#">Raiz</a><p>Enjoy
@@ -39,7 +45,10 @@ rec:
 
 
     <li><a href="#">ClickBank</a><p>Enjoy non-stop streaming, gaming, and
-    surfing.</p></li></ol></div>
+    surfing.</p></li>
+
+
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Website Builders</h1><ol><li><a
@@ -56,7 +65,10 @@ rec:
 
 
     <li><a href="#">Wisr</a><p>Enjoy non-stop streaming, gaming, and
-    surfing.</p></li></ol></div>
+    surfing.</p></li>
+
+
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Going Offshore</h1><ol><li><a href="#">Nomad
@@ -68,6 +80,6 @@ rec:
     Apps.
   main_h1: 'Please Note That:'
   main_p: >-
-    This is bases purely off data, quanatitve analyis and facts and you should
+    This is based purely off data, quanatitve analyis and facts and you should
     do your own reserach and consult a professional before making any finanical
     deciosn for yourself.
