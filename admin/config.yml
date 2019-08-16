@@ -173,6 +173,24 @@ collections:
               - {label: "Box Four Title", name: "sub_h1_4", widget: "string"}
               - {label: "Box Four Subtext", name: "sub_p_4", widget: "string"}
 
+      # Footer
+      - label: "Footer Content"
+        name: "footer"
+        file: "_data/footer.yml"
+        fields:
+          - label: "footer content"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Phone Number", name: "p_1", widget: "string"}
+              - {label: "Email", name: "p_2", widget: "string"}
+              - {label: "Youtube Hyperlink", name: "link_yt", widget: "string"}
+              - {label: "Instagram Hyperlink", name: "link_ins", widget: "string"}
+              - {label: "Facebook Hyperlink", name: "link_fb", widget: "string"}
+              - {label: "Pinterest Hyperlink", name: "link_pin", widget: "string"}
+              - {label: "Disclaimer", name: "disclaimer", widget: "string"}
+              - {label: "Copyrights", name: "copyrights", widget: "string"}
+
         # FAQ Page
       - label: "FAQ Page"
         name: "faq"
