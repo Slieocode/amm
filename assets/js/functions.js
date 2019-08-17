@@ -377,4 +377,5 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 			   }
 			})
 		}
+
 });

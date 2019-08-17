@@ -122,12 +122,13 @@ function initSearch() {
         execSearch(q);
         closeSearch();
     });
+
+
 }
 $('.close-search-i').on('click', function(){
     $('.search-container').fadeOut(500);
     $('.container, section, footer').fadeIn(700);
     $('header').css({height:header_height})
-    console.log(header_height)
 })
 
 /**
@@ -209,6 +210,18 @@ function showSearchResults(results) {
     // Add results HTML to placeholder
     $resultsPlaceholder.html(results);
     clampingTitle();
+    let categoriesFound = [];
+    let searchResSpan = $('.search-cont').find('span:first-child');
+    let numberFound =  Number(searchResSpan.text());
+
+        /* Search filter */
+        $('.card-link').each((i, el)=>{
+            if($(el).find('.category-title').text() == 'International' || $(el).find('.category-title').text() === 'AussieSpecific'){
+                categoriesFound.push($(this).attr('class'))
+                $(el).remove()
+              }
+        });    
+        $(searchResSpan).text(numberFound - categoriesFound.length);
 }
 
 
