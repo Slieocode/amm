@@ -18,9 +18,9 @@ layout: default
 
 <section class="contact-form">
 	<div class="container">
-		<form  action="https://getsimpleform.com/messages?form_api_token=114b7c2f537d2e08bdb0b9d97fff668e" method="post">
+		<form  action="https://getsimpleform.com/messages?form_api_token=731f7d991bae591cf101f92b2138473b" method="post">
 		    <p>{{ site.data.contact.contactus.main_h1 }}</p>
-		     <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thanks' />
+		     <input type='hidden' name='redirect_to' value='{{site.url}}/thanks' />
 		    <div class="login">
 				<label>
 				    <input type="text" required="required" name="Name" />
@@ -38,7 +38,7 @@ layout: default
 				    	{% endfor %}
 					</select>
 			    <label class="msg" >
-			    <input type="text" required="required" class="area" name="Email" />
+			    <input type="text" required="required" class="area" name="content" />
 			     <span>Message</span>
 			    </label>
 		    </div>

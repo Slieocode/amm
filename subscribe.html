@@ -91,10 +91,11 @@ layout: default
 				  <div id="odometer" class="some-element"></div>
 			</div>
 			<section style="margin-top:20%" class="contact-form books-form">
-				<form action="{{site.data.bookone.book.bookonelink}}">
+				<form method="post" action="https://getsimpleform.com/messages?form_api_token=731f7d991bae591cf101f92b2138473b">
 				    <div class="login">
+				    	  <input type='hidden' name='redirect_to' value='{{site.data.bookone.book.bookonelink}}' />
 						<label>
-						    <input type="text" required="required"/>
+						    <input type="email" name="email" required="required"/>
 						    <span>Email</span>
 						<label>
 				    </div>
