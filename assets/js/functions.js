@@ -30,14 +30,15 @@ $(document).ready(function(){
 				transform:'scale(1)'
 			})	
 			let subdiv;
-			$('.main-li').on({
+			$('.main-li > a').on({
 				click: function(){
-					subdiv = $(this).find('.link-holder');
+					subdiv = $(this).parent('.main-li').find(' > .link-holder');
+					console.log(subdiv)
 					if(subdiv.css('display') === "none"){
-						$(this).siblings().find('.link-holder').fadeOut();
-					   	$(this).find('.sub-li').fadeIn();
+						$(this).parent('.main-li').siblings().find('.link-holder').fadeOut();
+					   	$(this).parent('.main-li').find('.sub-li').fadeIn();
 
-					   	$(this).find('.link-holder').fadeIn();
+					   	$(subdiv).fadeIn();
 					}else{
 						subdiv.fadeOut();
 					}
@@ -359,4 +360,21 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 				transition:'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
 			})
 		})
+
+		/* Navbar trimmer */
+		$('nav').on('mouseover', function(){
+			 $('.sub-link').each((i,el)=>{
+	     		if(el.innerText.includes("INT")){
+		   			$(el).text(el.innerText.replace('INT', ''))     
+			  	 }
+			})
+		})
+
+		if($('.codrops-header h1').length){
+			$('.codrops-header h1').each((i,el)=>{
+			     if(el.innerText.includes("-Int")){
+				   $(el).text(el.innerText.replace('-Int', ''))         
+			   }
+			})
+		}
 });
