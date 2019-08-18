@@ -131,7 +131,7 @@ $(document).ready(function(){
 	})
 
 	/* video Popup Handler  */
-$(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
+// $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 
 	/* Menu Button Trigger */
 	const btn = document.getElementById("menu-toggle");

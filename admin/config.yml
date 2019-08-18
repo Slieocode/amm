@@ -302,6 +302,7 @@ collections:
               - {label: "First Catch Phrase", name: "header_catch_phrase_one", widget: "string"}
               - {label: "Second Catch Phrase", name: "header_catch_phrase_two", widget: "string"}
               - {label: "Blurb", name: "header_paragraph", widget: "string"}
+              - {label: "Video Hyperlink", name: "header_button_link", widget: "string"}
           - label: "About Section"
             name: "about"
             widget: "object"
