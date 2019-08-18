@@ -1,8 +1,19 @@
 .services-header{
 	height: 530px;
-	background: url('../img/services/01.png') no-repeat;
-	background-size:cover;
-	background-attachment: fixed;
+	&:before {
+	    display: block;
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    background: url(../img/services/01.png) no-repeat;
+	    background-size: cover;
+	    background-attachment: fixed;
+	    z-index: -1;
+	    filter: grayscale(100%);
+		}
 	.overlay{
 		background: rgba(0, 0, 0, 0.6);		
 	}

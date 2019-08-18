@@ -308,7 +308,7 @@ $(".play-3").yu2fvl({ vid: "YRG-gSHpdrM", ratio: 4/3 })
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length && false){
+	if(!$('.download').length){
 	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
 			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
 			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
