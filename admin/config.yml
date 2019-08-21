@@ -38,6 +38,21 @@ collections:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Blurb", name: "blurp", widget: "string"}
               - {label: "my Story", name: "myStory", widget: "markdown"}
+      # Site Config
+      - label: "Site Config"
+        name: "description"
+        file: "_config.yml"
+        fields:
+          - label: "Site Description"
+            name: "description"
+            widget: "String"
+          - label: "Email"
+            name: "email"
+            widget: "string"  
+          - label: "Title"
+            name: "title"
+            widget: "string"  
+
       # Policy  page
       - label: "Terms And Policies Page"
         name: "policy"
