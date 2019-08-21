@@ -45,7 +45,7 @@ collections:
         fields:
           - label: "Site Description"
             name: "description"
-            widget: "String"
+            widget: "string"
           - label: "Email"
             name: "email"
             widget: "string"  
