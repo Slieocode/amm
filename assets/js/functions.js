@@ -372,8 +372,8 @@ $(document).ready(function(){
 
 		if($('.codrops-header h1').length){
 			$('.codrops-header h1').each((i,el)=>{
-			     if(el.innerText.includes("-Int")){
-				   $(el).text(el.innerText.replace('-Int', ''))         
+			     if(el.innerText.includes("-int")){
+				   $(el).text(el.innerText.replace('-int', ''))         
 			   }
 			})
 		}
