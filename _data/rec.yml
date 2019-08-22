@@ -1,7 +1,6 @@
 rec:
   body: >-
-    <div class="rec-holder"><h1>Match betting</h1><ol><li><a href="#">Match
-    betting</a><p>To come soon ...</p></li>
+    <div class="rec-holder"><h1>Match betting</h1><ol>
 
 
     <li><a href="#">Betfair</a><p>These guys are the only exchange and are
@@ -9,9 +8,10 @@ rec:
 
 
     <li><a href="#">Bonus Money</a><p>These guys are the non-stop shop for all
-    things Aussie Matched Betting</p></li></ol></div>
+    things Aussie Matched Betting</p></li>
 
 
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Market Research</h1><ol>
