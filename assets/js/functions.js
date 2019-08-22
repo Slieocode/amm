@@ -380,8 +380,8 @@ $(document).ready(function(){
 
 		if($('.category').length){
 			$('.category').each((i,el)=>{
-			     if(el.innerText.includes("-int")){
-				   $(el).text(el.innerText.replace('-int', ''))         
+			     if(el.innerText.includes("-INT")){
+				   $(el).text(el.innerText.replace('-INT', ''))         
 			   }
 			})
 		}
