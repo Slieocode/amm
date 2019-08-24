@@ -308,32 +308,26 @@ $(document).ready(function(){
 	})
 
 	/* Youtube RealTime Subscriber Counter */
-	if(!$('.download').length){
-	 const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
-			apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
-			api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
+	if($('.download')){
+	 // const 	channelId = 'UCFjdDTZcTHWsBKYw0z5H_6g',
+		// 	apiKey = 'AIzaSyCge6fBP5k8AnNe7OCScgEUCf8Kvp1TCHk', 
+		// 	api_response = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`,
 
-			container = document.querySelector(".container"),
-			col = document.querySelector(".counter"),
-			odometer = document.getElementById("odometer");
+		// 	container = document.querySelector(".container"),
+		// 	col = document.querySelector(".counter"),
+		// 	odometer = document.getElementById("odometer");
 
-			let subCount = 0;
+		// 	let subCount = 0;
 
-			const urls = [api_response];
+		// 	const urls = [api_response];
 
-			setInterval(() => {
-			  requestCall(api_response);
-			}, 2000);
+		// 	setInterval(() => {
+		// 	  requestCall(api_response);
+		// 	}, 2000);
 
-			const requestCall = (apiCall) =>
-			fetch(apiCall).
-			then(blob => blob.json()).
-			then(data => {
-			  subCount = data.items[0].statistics.subscriberCount;
-			  odometer.innerHTML = subCount;
-			});
+			// odometer.innerHTML = 3.1+ 'K+'
 	}else{
-		$('.subs').css({display:'none'})
+		$('.subs').css({display:'block'})
 	}
 
 		$('.sub-link').each((index, el)=>{
