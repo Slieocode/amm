@@ -31,6 +31,24 @@ article{
     box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
     padding: 49px;
     border-radius: 20px;
+     p a{
+    	color:#008aff !important;
+    	position: relative;
+    	&:before{
+		    content: '';
+		    position: absolute;
+		    z-index: 9;
+		    left: 0;
+		    top: 70%;
+		    transform: translateY(209%);
+		    height: 12%;
+		    width: 100%;
+		    background: #008aff;
+		    background-repeat: no-repeat;
+		    opacity: 1;
+		    transition: all 0.3s ease-in-out;    		
+    	}
+    }
     .author-avatar{
     	display: flex;
 	    justify-content: space-between;
