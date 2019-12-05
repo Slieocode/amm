@@ -163,7 +163,14 @@
 
 
 
-
+@media screen and (max-width: 1200px){
+      .pic-holder{
+        img{
+          width: 171% !important;
+          margin-left: -96px !important;
+        }
+      }
+}
 
 
 
