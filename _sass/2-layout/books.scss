@@ -1,4 +1,6 @@
 .books-header{
+	.overlay{
+	}
 	height: 530px;
 	&:before {
 	    display: block;
@@ -17,13 +19,15 @@
 	}
 	.books-holder{
 		display: flex;
-		margin-top:5%;
-		justify-content: left;
+		justify-content: left;	
+
 	}
 	.books-text{
 		display: flex;
 		flex-direction: column;
 		flex-basis: 57%;
+		padding-top:0;
+		align-items: left !important;
 		h1{
 		    font-size: 3.5em;
 		}
