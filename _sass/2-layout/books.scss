@@ -1,6 +1,4 @@
 .books-header{
-	.overlay{
-	}
 	height: 530px;
 	&:before {
 	    display: block;
@@ -13,9 +11,9 @@
 		background: url('../img/books/02.png') no-repeat;
 	    background-size: cover;
 	    background-attachment: fixed;
+		background-position: 50%;
 	    z-index: -1;
 	    filter: grayscale(100%);
-	    
 	}
 	.books-holder{
 		display: flex;

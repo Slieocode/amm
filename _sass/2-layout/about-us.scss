@@ -97,6 +97,12 @@
 
 
 @media screen and (max-width: 990px){
+	.aboutus-header:before{
+	    background-size: cover;
+	    z-index: -1;
+	    transform: scale(-1, 1) !important;
+	    background-position: 100%;
+	}
 	.illustration{
 		display: none;
 	}
