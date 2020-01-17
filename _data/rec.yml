@@ -1,5 +1,11 @@
 rec:
   body: >-
+    <div class="rec-holder"><h1>Banks</h1><ol><li><a
+    href="https://link.up.com.au/moneyman">Up Bank</a><p>Sign up here to get $10
+    straight away. I have used Up for almost 12 months now, you can see our
+    review on our YouTube channel.</p></li></ol></div>
+
+
     <div class="rec-holder"><h1>Match betting</h1><ol>
 
 
@@ -7,8 +13,9 @@ rec:
     needed to matched-bet!</p></li>
 
 
-    <li><a href="#">Bonus Money</a><p>These guys are the non-stop shop for all
-    things Aussie Matched Betting</p></li>
+    <li><a href="https://bonusmoney.com.au/adf1/pro">Bonus Money</a><p>These
+    guys are the non-stop shop for all things Aussie Matched Betting. Sign up
+    here for 20% off. I use their service personally.</p></li>
 
 
     </ol></div>
@@ -28,8 +35,19 @@ rec:
     </ol></div>
 
 
-    <div class="rec-holder"><h1>Stocks</h1><ol><li><a href="#">Raiz</a><p>To
-    come soon...</p></li></ol></div>
+    <div class="rec-holder"><h1>Stocks</h1><ol><li><a
+    href="https://app.raizinvest.com.au/invite/XZYPNV">Raiz</a><p>Sign up here
+    for a free $5. A great micro-investing app though it has higher fees than
+    its competition. You can see it compared on our YouTube channel!</p></li>
+
+
+    <li><a href="">SpaceShip</a><p>Sign up here for a free $5.A great
+    micro-investing app. I invest here personally and have reviewed it along
+    with Raiz and CommSec Pocket on our YouTube channel. Please use this code to
+    get the $5 bonus 'S8FC12XN18'.</p></li>
+
+
+    </ol></div>
 
 
     <div class="rec-holder"><h1>Affiliate Marketing</h1><ol>
@@ -69,15 +87,20 @@ rec:
     </ol></div>
 
 
-    <div class="rec-holder"><h1>Going Offshore</h1><ol><li><a
+    <div class="rec-holder"><h1>Tax - On and Off Shore</h1><ol><li><a
     href="https://nomadcapitalist.com/">Nomad Capitalist</a><p>Andrew is the one
-    stop-shop for all things offshore tax!</p></li></ol></div>
+    stop-shop for all things offshore tax!</p></li>
+
+
+    <li><a href="">Pop Tax</a><p>These are the guys I use to minimize my tax
+    (legally)! Very seamless experience and of course, low
+    prices!</p></li></ol></div>
   header_h1: Our Recommendations
   header_p: >-
     Here Are The Best Of What We Have Reviewed From P2P Platforms to Investing
     Apps.
   main_h1: 'Please Note That:'
   main_p: >-
-    This is based purely off data, quanatitve analyis and facts and you should
-    do your own reserach and consult a professional before making any finanical
-    deciosn for yourself.
+    This is based purely off data, quantitative analysis and facts and you
+    should do your own research and consult a professional before making any
+    financial decision for yourself.
