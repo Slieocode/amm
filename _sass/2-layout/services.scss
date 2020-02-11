@@ -249,9 +249,16 @@
 }
 
 @media screen and (max-width: 590px){
+
+	.services-text{
+		h1{
+			text-align: center;
+		}
+	}
 	.pop-up-serv{
 		width:80% !important;
 		h1{
+			text-align: center;
 			font-size:1.6em;
 		}
 		p{
@@ -266,3 +273,5 @@
 		}
 	}
 }
+
+
