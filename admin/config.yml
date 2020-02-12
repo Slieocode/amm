@@ -103,6 +103,7 @@ collections:
               - {label: "Question Four", name: "bookone_q4", widget: "string"}
               - {label: "Answer Four", name: "bookone_a4", widget: "string"}
               - {label: "Book Link", name: "bookonelink", widget: "string"}
+              - {label: "Book Downloads", name: "downloads", widget: "number"}
 
       # Book Two page
       - label: "Book Two Page"

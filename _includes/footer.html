@@ -1,10 +1,20 @@
 <footer>
 	<div class="container">
+<section class="download">
+	<h1>Youtube Subscribers</h1>
+	<div class="container">
+			<div class="downloadCount">
+				  <span style="display: none" class="numberx">{{site.data.footer.footer.subs}}</span>
+				  <div id="odometer" class="some-element"></div>
+			</div>
+	</div>
+</section>
+
 		<div class="downloadCount subs">
 			    <h1>Aussie Money Man</h1>
-			    <h3>Youtube Subscribers</h3>
 			    <a class="sub" target="_base" href="https://www.youtube.com/channel/UCFjdDTZcTHWsBKYw0z5H_6g"> Subscribe Now! </a> <br><br><br>
-			    <div  class="x footer-od" id="x"><h1 style="font-size:6em">{{site.data.footer.footer.subs}}</h1></div>
+
+
 		</div>
 	</div>
 	<div class="first-section">
@@ -40,3 +50,22 @@
 		</div>
 	</div>
 </footer>
+
+<script src="https://github.hubspot.com/odometer/odometer.js"></script>
+
+<script>
+	if(document.querySelector('.books-form')){
+		document.querySelector('footer .container').remove()
+	}
+	var requestsInterval = 5 * 1000; //5 seconds
+	var current = Number(document.querySelector('.numberx').textContent);
+	var increment = 3;
+	var el = document.querySelector('.some-element');
+	od = new Odometer({el: el, value: current, format: 'd'});
+
+	var interval=setInterval(function(){
+	  current += increment;
+	  od.update(current);
+	}, requestsInterval);
+
+</script>

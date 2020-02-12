@@ -88,6 +88,7 @@ layout: default
 	<h1>People Downloading Our Book</h1>
 	<div class="container">
 			<div class="downloadCount">
+				  <span style="display: none" class="b-down">2550</span>
 				  <div id="odometer" class="some-element"></div>
 			</div>
 			<section style="margin-top:20%" class="contact-form books-form">
@@ -119,7 +120,7 @@ layout: default
 <script>
 
 	var requestsInterval = 5 * 1000; //5 seconds
-	var current = 1000;
+	var current = Number(document.querySelector('.b-down').textContent);
 	var increment = 3;
 	var el = document.querySelector('.some-element');
 	od = new Odometer({el: el, value: current, format: 'd'});
