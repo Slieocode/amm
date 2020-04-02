@@ -6,83 +6,83 @@ home:
     Covering everything from Investing to Saving to Wealth Creation from
     first-hand experience you know are in good hands.
 about:
-  about_box_five_p: >-
-    We don't charge you for what we provide so you know it is of value, no need
-    to trick you into buying from us.
-  about_box_five_title: Free
-  about_box_four_p: >-
-    We provide actual factual data with no bias so you can make the best
-    decisions for you. 
-  about_box_four_title: Unbiased
-  about_box_one_p: >-
-    We don't cover anything that has been widely covered unless it fails to meet
-    our values, so we don't waste anyone's time.
-  about_box_one_title: Unique
-  about_box_three_p: >-
-    Unlike every other site out there, I actually do everything I talk about
-    myself, so you know you are getting real data from someone with first-hand
-    experience. 
-  about_box_three_title: I do this myself
-  about_box_two_p: >-
-    We don't do half a job on anything, we cover each topic in extreme detail,
-    covering all competitors, all details, facts, etc. 
-  about_box_two_title: Holistic
-  about_heading: <span class="underline">Nicholas G. Muscat</span>.
-  about_heading_box: Why We Are Different
-  about_paragraph: >-
-    Our Misson: Sharing holistic, unbiased, first hand, free and unique
-    information.
-  about_point_1: Net-worth 100k before 20.
   about_point_1_p: >-
     Nicholas has created real wealth and no he did not come from an affluent
     family, live with his parents or anything of the like. In fact, Nicholas
     attended one of his states bottom public schools.
-  about_point_2: Started multiple profitable businesses.
   about_point_2_p: >-
     Nicholas has been able to create not one but multiple profitable businesses
     utliseing varying online business models.
-  about_point_3: >-
-    Spent years researching the most efficient ways to achieve
-    success.                                                                      
   about_point_3_p: >-
     Like everyone, Nicholas wants to get the most for the least work and he has
     assured he finds the best way to do this. AMM is his way of sharing it.
-  about_point_4: >-
-    Worked for the state and federal Government, learnt a new language,
-    qualified in IT and more...
   about_point_4_p: >-
     Nicholas is not just the AussieMoneyMan, he values freedom and the ability
     to follow his passion no matter what that may be. Money is simply the tool
     to get there. Nicholas is qualified in frameworks such as a sAFE
     Practitioner and Scrum Master, Agile certified professional, Project
     Leadership and Manager and more.
+  about_box_four_title: Unbiased
+  about_box_three_p: >-
+    Unlike every other site out there, I actually do everything I talk about
+    myself, so you know you are getting real data from someone with first-hand
+    experience. 
+  about_box_five_p: >-
+    We don't charge you for what we provide so you know it is of value, no need
+    to trick you into buying from us.
   about_title_one: 'Do less, Get More'
+  about_point_1: Net-worth 100k before 20.
+  about_heading: <span class="underline">Nicholas G. Muscat</span>.
+  about_box_five_title: Free
+  about_point_2: Started multiple profitable businesses.
+  about_box_one_p: >-
+    We don't cover anything that has been widely covered unless it fails to meet
+    our values, so we don't waste anyone's time.
+  about_box_three_title: I do this myself
+  about_point_3: >-
+    Spent years researching the most efficient ways to achieve
+    success.                                                                      
+  about_point_4: >-
+    Worked for the state and federal Government, learnt a second language, read
+    hundreds of books on self improvement and finance and more...
+  about_box_two_p: >-
+    We don't do half a job on anything, we cover each topic in extreme detail,
+    covering all competitors, all details, facts, etc. 
+  about_box_one_title: Unique
+  about_heading_box: Why We Are Different
+  about_paragraph: >-
+    Our Misson: Sharing holistic, unbiased, first hand, free and unique
+    information.
+  about_box_four_p: >-
+    We provide actual factual data with no bias so you can make the best
+    decisions for you. 
+  about_box_two_title: Holistic
 showcase:
-  item_1_p: General Business tips and experiences.
-  item_1_title: General Business
-  item_2_p: 'One of AMMs differences, every great way to make money we have found is here'
-  item_2_title: Making Money
-  item_3_p: 'The best tips are here, in fact we have them all.'
   item_3_title: Saving Money
-  item_4_p: 'Stocks, bonds, P2P, micro-investing, ETFS, it is here!'
   item_4_title: Investing Money
-  item_5_p: Everything related to onshore tax can be found here.
   item_5_title: Taxation
-  item_6_p: Everything Superannuation related can be found here
   item_6_title: Superannuation/pensions
-  item_7_p: Providing the hard facts so you can always have the best.
   item_7_title: National and International Financial Comparisons
+  item_8_title: The benefits of going off-shore
+  item_9_title: Wealth creation
+  showcase_heading: <h1>What we cover here at <span class="underline">AMM</span></h1>
+  item_1_p: General Business tips and experiences.
+  item_2_p: 'One of AMMs differences, every great way to make money we have found is here'
+  item_3_p: 'The best tips are here, in fact we have them all.'
+  item_4_p: 'Stocks, bonds, P2P, micro-investing, ETFS, it is here!'
+  item_5_p: Everything related to onshore tax can be found here.
+  item_6_p: Everything Superannuation related can be found here
+  item_7_p: Providing the hard facts so you can always have the best.
   item_8_p: >-
     One that only a few will reach mostly due to never reaching the point of
     necessity or perhaps for some the desire
-  item_8_title: The benefits of going off-shore
-  item_9_p: 'General ways to personal wealth creation, often the soft skills.'
-  item_9_title: Wealth creation
-  showcase_heading: <h1>What we cover here at <span class="underline">AMM</span></h1>
   showcase_p: >-
     While what we may cover here is broad, you can bet if it is covered, it is
     done well. That is, holistically, unbiased, free, honest and from
     experience.
+  item_9_p: 'General ways to personal wealth creation, often the soft skills.'
+  item_1_title: General Business
+  item_2_title: Making Money
 stats:
   btn: Learn More
   people: '1400'
@@ -92,34 +92,34 @@ stats:
   smallHeading: The Difference
   stat_p: Return Rate
 clients:
-  c_1_date: 1 Dec
-  c_1_heading: Nicholas's free content helped me so much
-  c_1_img: /assets/img/blogs/uploads/04.jpg
   c_1_paragraph: >-
     Nicholas offered to help me from the start after I left a comment on one of
     his videos, helping me make money from matched betting and market research.
     He never asked for anything.
-  c_2_date: 9 Aug
-  c_2_heading: Word of mouth is a charm
-  c_2_img: /assets/img/blogs/uploads/04.jpg
   c_2_paragraph: >-
     They say the best form of adverting is word of mouth and it seems those at
     AMM knew this, not only did I hear of them via word of mouth but after
     working with them I was spreading the word too.
-  c_3_date: 1 Jan
-  c_3_heading: Working with Nick is one of the highlights of my career
-  c_3_img: /assets/img/blogs/uploads/r.jpg
+  c_heading: What Others Say about AMM
   c_3_paragraph: >-
     I was genuinely excited to work with someone who had so much go and wisdom
     before even turning 20.
-  c_4_date: 19 Nov
-  c_4_heading: Nicholas's mentoring has been amazing
-  c_4_img: /assets/img/blogs/uploads/f.jpg
   c_4_paragraph: >-
     Nicholas only takes something on if he knows he is the best at it. Nicholas
     provided more than was asked and continued to provide support well after his
     service had ended.
-  c_heading: What Others Say about AMM
+  c_4_date: 19 Nov
+  c_3_date: 1 Jan
+  c_2_date: 9 Aug
+  c_1_date: 1 Dec
+  c_1_heading: Nicholas's free content helped me so much
+  c_2_heading: Word of mouth is a charm
+  c_1_img: /assets/img/blogs/uploads/04.jpg
+  c_3_heading: Working with Nick is one of the highlights of my career
+  c_2_img: /assets/img/blogs/uploads/04.jpg
+  c_4_heading: Nicholas's mentoring has been amazing
+  c_3_img: /assets/img/blogs/uploads/r.jpg
   c_para: >-
     <p class="first">See what some others have said after working with us</p> <p
     class="first".</p>
+  c_4_img: /assets/img/blogs/uploads/f.jpg
