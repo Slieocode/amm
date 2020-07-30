@@ -1,16 +1,16 @@
 links:
-  link1: home
-  link2: about
   link2_1: ABOUT AMM
   link2_2: ABOUT NICHOLAS
+  link4_1: Market Research
   link2_3: FAQ
-  link3: articles
-  link4: Ebook
-  link4_1: Market Reserach
   link4_2: book two
   link4_3: book three
+  link7_1: terms & polices
+  link7_2: contact us
+  link1: home
+  link2: about
+  link3: articles
+  link4: Ebook
   link5: services
   link6: recommendations
   link7: other
-  link7_1: terms & polices
-  link7_2: contact us
