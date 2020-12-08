@@ -72,10 +72,10 @@ showcase:
   item_2_title: Making Money
 stats:
   btn: Learn More
-  people: "1400"
+  people: "2400"
   people_txt: Views Daily
-  percent: 69%
-  phrase: Over 30 messages<br>daily asking for more.
+  percent: "62"
+  phrase: Over 10 messages<br>daily asking for more.
   smallHeading: The Difference
   stat_p: Return Rate
 clients:
@@ -97,11 +97,11 @@ clients:
   c_1_date: 1 Dec
   c_1_heading: Nicholas's free content helped me so much
   c_2_heading: Word of mouth is a charm
-  c_1_img: /assets/img/blogs/uploads/04.jpg
+  c_1_img: assets/img/blogs/uploads/f.jpg
   c_3_heading: Working with Nick was Fantastic
-  c_2_img: /assets/img/blogs/uploads/04.jpg
+  c_2_img: assets/img/blogs/uploads/r.jpg
   c_4_heading: Nicholas's mentoring has been amazing
-  c_3_img: /assets/img/blogs/uploads/r.jpg
+  c_3_img: assets/img/blogs/uploads/04.jpg
   c_para: <p class="first">See what some others have said after working with
     us</p> <p class="first".</p>
-  c_4_img: /assets/img/blogs/uploads/f.jpg
+  c_4_img: assets/img/blogs/uploads/03.jpg
