@@ -1,28 +1,24 @@
 headerAbout:
-  catch_phrase: 'Do less, Get More.'
-  info_box_1_heading: How AMM got Started?
-  info_box_1_subtext: >-
-    Aussiemoneyman (AMM) was started simply by Nicholas sharing his extensive
-    research with a goal to get the best by doing the least work. This started
-    as a simple comparison of all Australian Peer-to-Peer investing platforms
-    (something not done previously). Today AMM provides various real value
-    providing content from investing in P2P to making money from Market
-    Research. 
-  info_box_2_heading: What is Our Goal?
-  info_box_2_subtext: >-
-    It is simple, we hope to provide holistic, unbiased, unique, first hand
-    experienced and free information to you so you can too get more for less. We
-    pride ourselves on sticking to these values and so while we may not pump out
-    as much content as other similar sites and YouTube channels, you know when
-    we do, it is of real value and you can trust it.
-  info_box_3_heading: Australian Specific Content
-  info_box_3_subtext: >-
-    There are many websites of this nature tailored to the USA and other
-    countries but a limited amount tailored to Australians when factoring in the
-    limited availability of sites that post regularly on topics that matter from
-    the perspective of an ordinary Australian trying to achieve financial
-    freedom.
-  subtext: >-
-    Aussiemoneyman The first leading Website tailored Specifically to Australian
-    Finance and Business in General.
   subscribers: 6600
+  subtext: Aussiemoneyman The first leading Website tailored Specifically to
+    Australian Finance and Business in General.
+  info_box_1_heading: How AMM got Started?
+  info_box_2_heading: What is Our Goal?
+  info_box_3_heading: Australian Specific Content
+  info_box_1_subtext: "Aussiemoneyman (AMM) was started simply by Nicholas sharing
+    his extensive research with a goal to get the best by doing the least work.
+    This started as a simple comparison of all Australian Peer-to-Peer investing
+    platforms (something not done previously). Today AMM provides various real
+    value providing content from investing in P2P to making money from Market
+    Research. "
+  info_box_2_subtext: It is simple, we hope to provide holistic, unbiased, unique,
+    first hand experienced and free information to you so you can too get more
+    for less. We pride ourselves on sticking to these values and so while we may
+    not pump out as much content as other similar sites and YouTube channels,
+    you know when we do, it is of real value and you can trust it.
+  info_box_3_subtext: There are many websites of this nature tailored to the USA
+    and other countries but a limited amount tailored to Australians when
+    factoring in the limited availability of sites that post regularly on topics
+    that matter from the perspective of an Australian trying to achieve
+    financial freedom.
+  catch_phrase: Do less, Get More.
